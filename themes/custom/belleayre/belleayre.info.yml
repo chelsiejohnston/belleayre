@@ -1,0 +1,17 @@
+name: Belleayre
+description: A custom theme for Belleayre for Drupal 8.
+type: theme
+core: 8.x
+libraries:
+  - belleayre/global-css
+  - belleayre/global-js
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+  - core/modules/system/css/system.module.css
+  - core/modules/system/css/system.theme.css
+  - core/modules/views/css/views.module.css
+regions:
+  header: 'Header'
+  front: 'Front'
+  content: 'Content'
+  footer: 'Footer'

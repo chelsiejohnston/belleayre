@@ -1,0 +1,146 @@
+@import "bootstrap";
+
+/** globals **/
+$global-margin: 1.618em;
+$global-padding: 1.618em;
+
+* + * { margin-top: $global-margin; }
+
+* > div,
+li { margin-top: 0; }
+
+/** front page **/
+
+#block-belleayre-branding { 
+    // height: calc(2vh + 1.618em); 
+    // text-align: center;
+    // padding: .5 * $global-padding;
+    // color: rgb(0, 0, 0); 
+    // text-transform: uppercase;   
+    // letter-spacing: .618px;
+    // mix-blend-mode: overlay;
+    // font-weight: bold;
+}
+
+#block-teaserintro {
+    text-align: center;
+    padding: .5 * $global-padding;
+    color: rgb(0, 0, 0);    
+    text-transform: uppercase;  
+    letter-spacing: .618px;
+    mix-blend-mode: overlay;
+    font-weight: bold;
+    font-size: 5vw;
+    color: #CDE1E1;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+}
+
+#block-teaserintro span { 
+    display: block; 
+    margin: 0;
+    line-height: 0vw;
+}
+
+#block-teaserintro span.the { 
+    font-size: 4vw; 
+    letter-spacing: 1vw;
+    font-weight: 400;
+    display: none;
+}
+
+span.date { 
+    font-size: 3vw; 
+    letter-spacing: 1vw;
+    font-weight: 400;
+    line-height: 6vw !important;
+}
+
+span.location { 
+    font-size: 4vw; 
+    letter-spacing: 1vw;
+    font-weight: 400;
+    line-height: 5vw !important;
+}
+
+#block-teaserintro span.title { 
+    letter-spacing: -1vw;
+    font-size: 12vw;
+    line-height: 13.5vw;
+    color: #000000;
+    mix-blend-mode: overlay;
+    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.33);
+}
+
+span.name { 
+    // color: #7BF7ED; 
+}
+
+.top-container { 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background: url('/themes/custom/belleayre/images/Central_Catskills_from_Twin_south_summit.jpg'), rgba(0,0,0,.1);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#block-belleayre-branding { display: none; }
+
+#block-comingsoon {
+    line-height: 0.5;
+    text-align: center;
+    margin-top: 1.4em;
+    mix-blend-mode: screen;
+}
+
+#block-comingsoon span {
+    display: inline-block;
+    position: relative;
+    border: solid 1px #55A5B7;
+    padding: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 10px;
+}
+
+#block-comingsoon span:before,
+#block-comingsoon span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid #55A5B7;
+    border-top: 1px solid #55A5B7;
+    top: 8px;
+    width: 30vw;
+}
+
+#block-comingsoon span:before {
+    right: 100%;
+    margin-right: 0;
+}
+
+#block-comingsoon span:after {
+    left: 100%;
+    margin-left: 0;
+}
+
+
+// .container .jumbotron, .container-fluid .jumbotron {
+//  background: transparent;
+//  border: solid 1px whitesmoke;
+//  border-radius: 0;
+//  border-right: 0;
+//  border-left: 0;
+//  color: whitesmoke;
+// }
+
