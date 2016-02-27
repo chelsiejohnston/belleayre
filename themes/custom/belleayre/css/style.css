@@ -7263,123 +7263,469 @@ button.close {
   /* line 18, bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
+/* I'm a dupe of the _variables.scss file! I can be used to override defaults from Bootstrap. */
+/* override some defaults from Bootstrap */
+/* line 1, _ccform.scss */
+.ctct-custom-form {
+  font: 16px Helvetica Neue,Arial,sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  min-width: 350px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 15px; }
+
+/* line 10, _ccform.scss */
+.ctct-form-defaults {
+  color: #000;
+  padding: 15px;
+  border-radius: 5px; }
+
+/* line 15, _ccform.scss */
+.ctct-custom-form * {
+  box-sizing: border-box; }
+
+/* line 16, _ccform.scss */
+.ctct-custom-form p {
+  margin: 0;
+  margin-bottom: 24px; }
+
+/* line 17, _ccform.scss */
+.ctct-custom-form select {
+  width: 100%;
+  height: 46px;
+  border: 1px solid #b0b6bb;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
+
+/* line 18, _ccform.scss */
+.ctct-custom-form .ctct-form-required {
+  position: relative; }
+
+/* line 19, _ccform.scss */
+.ctct-custom-form .ctct-form-required:before {
+  content: "\2217";
+  position: absolute;
+  top: -4px;
+  left: -12px;
+  color: #f5463b; }
+
+/* line 20, _ccform.scss */
+.ctct-custom-form input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #b0b6bb;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-family: Helvetica Neue, Arial, sans-serif;
+  color: #394856;
+  font-size: 16px;
+  line-height: 1.5; }
+
+/* line 31, _ccform.scss */
+.ctct-custom-form input[type="text"]:focus {
+  outline: 1px solid #5dacd6; }
+
+/* line 32, _ccform.scss */
+.ctct-custom-form .ctct-form-errorMessage {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  color: #f5463b; }
+
+/* line 38, _ccform.scss */
+.ctct-custom-form ::-webkit-input-placeholder {
+  color: #88919a; }
+
+/* line 39, _ccform.scss */
+.ctct-custom-form :-moz-placeholder {
+  color: #88919a; }
+
+/* line 40, _ccform.scss */
+.ctct-custom-form ::-moz-placeholder {
+  color: #88919a; }
+
+/* line 41, _ccform.scss */
+.ctct-custom-form :-ms-input-placeholder {
+  color: #88919a; }
+
+/* line 42, _ccform.scss */
+.ctct-custom-form input.is-error, .ctct-custom-form .ctct-form-input.is-error {
+  border-color: #f5463b !important;
+  color: #f5463b !important; }
+
+/* line 46, _ccform.scss */
+.ctct-custom-form label {
+  display: block;
+  margin-bottom: 12px;
+  line-height: 1; }
+
+/* line 51, _ccform.scss */
+.ctct-custom-form .Button {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px 20px;
+  line-height: 1;
+  background-image: none;
+  background-color: #ebedee;
+  color: #0078c1;
+  border: none;
+  box-shadow: none;
+  border-radius: 2px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+/* line 77, _ccform.scss */
+.ctct-custom-form .ctct-button {
+  color: #fff;
+  background-color: #0078c1;
+  display: block;
+  width: 100%; }
+
+/* line 84, _ccform.scss */
+.ctct-custom-form .ctct-button:hover {
+  color: #fff;
+  background-color: #3e9fda; }
+
+/* line 89, _ccform.scss */
+.ctct-custom-form .ctct-button:active {
+  background-color: #005c94; }
+
+/* line 93, _ccform.scss */
+.ctct-custom-form .ctct-form-footer {
+  font-size: 11px;
+  font-family: Helvetica Neue,Arial,sans-serif;
+  padding: 10px 0px 0px 0px; }
+
+/* line 99, _ccform.scss */
+.ctct-embed-signup h2 {
+  display: none; }
+
+/* line 101, _ccform.scss */
+.ctct-custom-form {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  padding: 0; }
+  @media (max-width: 480px) {
+    /* line 101, _ccform.scss */
+    .ctct-custom-form {
+      padding: 0 7vw 0 0;
+      margin: 4vh 0 0 0; } }
+
+/* line 112, _ccform.scss */
+.ctct-custom-form > div {
+  display: none; }
+
+/* line 116, _ccform.scss */
+.ctct-custom-form p[data-id="Email Address:p"] {
+  display: flex;
+  flex: 2 0 0;
+  font-size: 3vh; }
+
+/* line 123, _ccform.scss */
+.ctct-custom-form label {
+  display: none; }
+
+/* line 125, _ccform.scss */
+.ctct-custom-form button.ctct-button {
+  display: flex;
+  flex: 1 0 0;
+  max-height: 2.75em;
+  background: #343D25;
+  margin-top: 1px; }
+  /* line 132, _ccform.scss */
+  .ctct-custom-form button.ctct-button:hover {
+    background: #405D38; }
+
 /** globals **/
-/* line 7, style.scss */
+/** colors **/
+/* line 16, style.scss */
 * + * {
   margin-top: 1.618em; }
 
-/* line 9, style.scss */
+/* line 18, style.scss */
 * > div,
 li {
   margin-top: 0; }
 
+/* line 21, style.scss */
+body {
+  font-size: 14.5px;
+  color: #03241B; }
+
+@media (max-width: 480px) {
+  /* line 30, style.scss */
+  h2 {
+    font-size: 21px; } }
+
+/* line 34, style.scss */
+.container-fluid {
+  padding: 0; }
+
+/* line 38, style.scss */
+.has-icon:before {
+  line-height: 1.428571429;
+  vertical-align: top;
+  margin: 0 4px 0 0; }
+
 /** front page **/
-/* line 25, style.scss */
+/* line 57, style.scss */
 #block-teaserintro {
   text-align: center;
   padding: 0.809em;
-  color: black;
+  background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
   text-transform: uppercase;
   letter-spacing: .618px;
-  mix-blend-mode: overlay;
   font-weight: bold;
   font-size: 5vw;
-  color: #CDE1E1;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19); }
+  text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
-/* line 38, style.scss */
+/* line 77, style.scss */
 #block-teaserintro span {
   display: block;
   margin: 0;
   line-height: 0vw; }
 
-/* line 44, style.scss */
-#block-teaserintro span.the {
-  font-size: 4vw;
-  letter-spacing: 1vw;
-  font-weight: 400;
-  display: none; }
-
-/* line 51, style.scss */
+/* line 83, style.scss */
 span.date {
-  font-size: 3vw;
+  font-size: 3.25vw;
   letter-spacing: 1vw;
   font-weight: 400;
-  line-height: 6vw !important; }
+  line-height: 13vw !important; }
+  @media (min-width: 992px) {
+    /* line 83, style.scss */
+    span.date {
+      font-size: 2.25vw;
+      line-height: 9vw !important; } }
 
-/* line 58, style.scss */
+/* line 94, style.scss */
 span.location {
-  font-size: 4vw;
+  font-size: 4.5vw;
   letter-spacing: 1vw;
   font-weight: 400;
-  line-height: 5vw !important; }
+  line-height: 5.75vw !important; }
+  @media (min-width: 992px) {
+    /* line 94, style.scss */
+    span.location {
+      font-size: 3.5vw;
+      letter-spacing: 0.5vw; } }
+  @media (min-width: 1200px) {
+    /* line 94, style.scss */
+    span.location {
+      font-size: 2.7vw;
+      letter-spacing: .6vw;
+      line-height: 0.75vw !important; } }
 
-/* line 65, style.scss */
+/* line 110, style.scss */
 #block-teaserintro span.title {
   letter-spacing: -1vw;
-  font-size: 12vw;
-  line-height: 13.5vw;
-  color: #000000;
-  mix-blend-mode: overlay;
-  text-shadow: 0 1px 35px rgba(255, 255, 255, 0.33); }
+  line-height: 21.5vw;
+  text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
+  font-size: 12vw; }
+  @media (min-width: 768px) {
+    /* line 110, style.scss */
+    #block-teaserintro span.title {
+      margin-top: -18vh; } }
+  @media (min-width: 992px) {
+    /* line 110, style.scss */
+    #block-teaserintro span.title {
+      font-size: 10vw;
+      line-height: 16.5vw; } }
+  @media (min-width: 1200px) {
+    /* line 110, style.scss */
+    #block-teaserintro span.title {
+      font-size: 8vw;
+      line-height: 14.5vw;
+      letter-spacing: -.1em; } }
 
-/* line 78, style.scss */
-.top-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url("/themes/custom/belleayre/images/Central_Catskills_from_Twin_south_summit.jpg"), rgba(0, 0, 0, 0.1);
-  background-size: cover;
-  background-position: center; }
+/* line 133, style.scss */
+#block-aboutbelleayremusicfestival {
+  height: 10vh; }
+  @media (min-width: 768px) {
+    /* line 133, style.scss */
+    #block-aboutbelleayremusicfestival {
+      padding: 8vh 15.5vw; } }
 
-/* line 88, style.scss */
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; }
+/* line 146, style.scss */
+div#block-sociallinks * {
+  margin: 0; }
 
-/* line 95, style.scss */
+/* line 157, style.scss */
 #block-belleayre-branding {
   display: none; }
 
-/* line 97, style.scss */
-#block-comingsoon {
-  line-height: 0.5;
-  text-align: center;
-  margin-top: 1.4em;
-  mix-blend-mode: screen; }
+/* line 208, style.scss */
+#block-aboutbelleayremusicfestival {
+  background: #03241B;
+  color: #DBE4E2; }
 
-/* line 104, style.scss */
-#block-comingsoon span {
-  display: inline-block;
-  position: relative;
-  border: solid 1px #55A5B7;
-  padding: 1em;
-  text-transform: uppercase;
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: 2px;
-  font-size: 10px; }
+/* line 213, style.scss */
+div#block-mailinglistsignupform {
+  background: rgba(175, 196, 175, 0.9); }
+  /* line 215, style.scss */
+  div#block-mailinglistsignupform h2 {
+    font-size: 1em;
+    line-height: 5.5vw;
+    font-weight: 400; }
+    @media (min-width: 768px) {
+      /* line 215, style.scss */
+      div#block-mailinglistsignupform h2 {
+        font-size: 1.1em;
+        margin-bottom: 0; } }
 
-/* line 116, style.scss */
-#block-comingsoon span:before,
-#block-comingsoon span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid #55A5B7;
-  border-top: 1px solid #55A5B7;
-  top: 8px;
-  width: 30vw; }
+/* line 226, style.scss */
+#block-sociallinks {
+  background: #DBE4E2;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  /* line 231, style.scss */
+  #block-sociallinks a {
+    display: block;
+    font-size: 3vh;
+    color: darkgray;
+    margin: 2vh; }
+    @media (min-width: 768px) {
+      /* line 231, style.scss */
+      #block-sociallinks a {
+        font-size: 4vh; }
+        /* line 238, style.scss */
+        #block-sociallinks a:after {
+          content: " · "; } }
 
-/* line 127, style.scss */
-#block-comingsoon span:before {
-  right: 100%;
-  margin-right: 0; }
+/* line 245, style.scss */
+#block-inthenews {
+  background: #03241B;
+  color: #DBE4E2;
+  border-bottom: solid 1px #07533e; }
+  @media (min-width: 768px) {
+    /* line 245, style.scss */
+    #block-inthenews {
+      display: flex;
+      flex-direction: column;
+      width: 50%; } }
+  /* line 254, style.scss */
+  #block-inthenews a {
+    color: #72CCB3; }
+  /* line 255, style.scss */
+  #block-inthenews ul {
+    padding: 1vh 3vh 1vh 5vw; }
 
-/* line 132, style.scss */
-#block-comingsoon span:after {
-  left: 100%;
-  margin-left: 0; }
+/* line 258, style.scss */
+#block-embeddedsoundcloudplaylist {
+  background: #03241B;
+  color: #DBE4E2; }
+  @media (min-width: 768px) {
+    /* line 258, style.scss */
+    #block-embeddedsoundcloudplaylist {
+      display: flex;
+      flex-direction: column;
+      width: 50%; } }
+  /* line 267, style.scss */
+  #block-embeddedsoundcloudplaylist a {
+    color: #38eebd; }
+
+/* line 272, style.scss */
+.region-front {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+/* line 278, style.scss */
+.region-front > div {
+  width: 100vw;
+  padding: 7vw; }
+
+@media (min-width: 320px) {
+  /* line 286, style.scss */
+  #block-teaserintro {
+    height: 72vh; } }
+@media (min-width: 768px) {
+  /* line 286, style.scss */
+  #block-teaserintro {
+    height: 98vh; } }
+
+@media (min-width: 320px) {
+  /* line 291, style.scss */
+  #block-aboutbelleayremusicfestival {
+    height: 24vh; } }
+@media (min-width: 768px) {
+  /* line 291, style.scss */
+  #block-aboutbelleayremusicfestival {
+    height: 30vh; } }
+
+@media (min-width: 320px) {
+  /* line 296, style.scss */
+  div#block-mailinglistsignupform {
+    height: 25vh; } }
+@media (min-width: 768px) {
+  /* line 296, style.scss */
+  div#block-mailinglistsignupform {
+    height: 22vh; } }
+@media (min-width: 1200px) {
+  /* line 296, style.scss */
+  div#block-mailinglistsignupform {
+    height: 26vh; } }
+
+@media (min-width: 320px) {
+  /* line 302, style.scss */
+  #block-sociallinks {
+    height: 68vh; } }
+
+@media (min-width: 320px) {
+  /* line 309, style.scss */
+  div#block-mailinglistsignupform {
+    padding: 1vh 7vw; } }
+@media (min-width: 768px) {
+  /* line 309, style.scss */
+  div#block-mailinglistsignupform {
+    margin: 1vh 8.5vw;
+    margin-top: -30vh; } }
+@media (min-width: 992px) {
+  /* line 309, style.scss */
+  div#block-mailinglistsignupform {
+    margin: 1vh 15.5vw;
+    margin-top: -30vh; } }
+
+@media (min-width: 320px) {
+  /* line 324, style.scss */
+  .region-front > div {
+    order: 10; } }
+
+@media (min-width: 320px) {
+  /* line 328, style.scss */
+  #block-sociallinks {
+    order: 3; } }
+
+@media (min-width: 320px) {
+  /* line 332, style.scss */
+  #block-teaserintro {
+    order: 1; } }
+
+@media (min-width: 320px) {
+  /* line 336, style.scss */
+  #block-aboutbelleayremusicfestival {
+    order: 3; } }
+
+@media (min-width: 320px) {
+  /* line 340, style.scss */
+  div#block-mailinglistsignupform {
+    order: 2; } }

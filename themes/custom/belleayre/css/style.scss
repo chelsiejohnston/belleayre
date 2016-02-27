@@ -1,13 +1,45 @@
 @import "bootstrap";
+@import '_variables.scss'; /* override some defaults from Bootstrap */
+@import '_ccform.scss';
 
 /** globals **/
 $global-margin: 1.618em;
 $global-padding: 1.618em;
+// $link-color: #3B767F;
+
+/** colors **/
+
+$deepgreen: #03241B;
+$seafoamgreen: #72CCB3;
+$lightblue: #DBE4E2;
 
 * + * { margin-top: $global-margin; }
 
 * > div,
 li { margin-top: 0; }
+
+body {
+    font-size: 14.5px;
+    color: $deepgreen;
+}
+
+body a {
+    // color: $link-color;
+}
+
+h2 {
+    @include breakpoint(0, $screen-xs) { font-size: 21px; }
+}
+
+.container-fluid { padding: 0; }
+
+// icons
+
+.has-icon:before {
+    line-height: 1.428571429;
+    vertical-align: top;
+    margin: 0 4px 0 0;
+}
 
 /** front page **/
 
@@ -25,14 +57,21 @@ li { margin-top: 0; }
 #block-teaserintro {
     text-align: center;
     padding: .5 * $global-padding;
-    color: rgb(0, 0, 0);    
+    background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
+    background-size: cover;
+    background-position: center;
+    // color: rgb(0, 0, 0);    
     text-transform: uppercase;  
     letter-spacing: .618px;
-    mix-blend-mode: overlay;
+    // mix-blend-mode: overlay;
     font-weight: bold;
     font-size: 5vw;
-    color: #CDE1E1;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.19);
+    // color: #CDE1E1;
+    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
+    // margin-top: 15vh;    
+    display: flex;
+    align-items: center;
+    justify-content: center;  
 }
 
 #block-teaserintro span { 
@@ -41,106 +80,263 @@ li { margin-top: 0; }
     line-height: 0vw;
 }
 
-#block-teaserintro span.the { 
-    font-size: 4vw; 
-    letter-spacing: 1vw;
-    font-weight: 400;
-    display: none;
-}
-
 span.date { 
-    font-size: 3vw; 
+    font-size: 3.25vw; 
     letter-spacing: 1vw;
     font-weight: 400;
-    line-height: 6vw !important;
+    line-height: 13vw !important;
+    @include breakpoint(md) {
+        font-size: 2.25vw;
+        line-height: 9vw !important;
+    }
 }
 
 span.location { 
-    font-size: 4vw; 
+    font-size: 4.5vw;
     letter-spacing: 1vw;
     font-weight: 400;
-    line-height: 5vw !important;
+    line-height: 5.75vw !important;
+    @include breakpoint(md) {
+        font-size: 3.5vw;
+        letter-spacing: 0.5vw;
+    }
+    @include breakpoint(lg) {
+        font-size: 2.7vw;
+        letter-spacing: .6vw;
+        line-height: 0.75vw !important;
+    }
 }
 
 #block-teaserintro span.title { 
-    letter-spacing: -1vw;
+    letter-spacing: -1vw;    
+    line-height: 21.5vw;
+    // color: #000000;
+    // mix-blend-mode: overlay;
+    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
+    @include breakpoint(sm) { margin-top: -18vh; }
     font-size: 12vw;
-    line-height: 13.5vw;
-    color: #000000;
-    mix-blend-mode: overlay;
-    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.33);
+    @include breakpoint(md) { 
+        font-size: 10vw;
+        line-height: 16.5vw;
+    }
+    @include breakpoint(lg) {
+        font-size: 8vw;
+        line-height: 14.5vw;
+        letter-spacing: -.1em;
+    }
 }
 
 span.name { 
     // color: #7BF7ED; 
 }
 
-.top-container { 
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    background: url('/themes/custom/belleayre/images/Central_Catskills_from_Twin_south_summit.jpg'), rgba(0,0,0,.1);
-    background-size: cover;
-    background-position: center;
+#block-aboutbelleayremusicfestival {
+    height: 10vh;
+    @include breakpoint(sm) { padding: 8vh 15.5vw; }
+}
+
+div#block-sociallinks {    
+    // margin: 0 auto;
+    // border-radius: 2px;
+    // padding: 1em;
+    // text-transform: lowercase;
+    // text-align: center;
+}
+
+div#block-sociallinks * {
+    margin: 0;
 }
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
 }
 
 #block-belleayre-branding { display: none; }
 
 #block-comingsoon {
-    line-height: 0.5;
-    text-align: center;
-    margin-top: 1.4em;
-    mix-blend-mode: screen;
+    // line-height: 0.5;
+    // text-align: center;
+    // margin-top: 1.4em;
+    // // mix-blend-mode: overlay;    
 }
 
 #block-comingsoon span {
-    display: inline-block;
-    position: relative;
-    border: solid 1px #55A5B7;
-    padding: 1em;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 10px;
+    // display: inline-block;
+    // position: relative;
+    // padding: 1em;
+    // // color: rgba(255, 255, 255, 0.64);
+    // font-weight: 300;
+    // font-size: 18px;
+    // // background: rgb(0, 27, 35);
+    // text-transform: uppercase;
+    // letter-spacing: 3px;
 }
 
-#block-comingsoon span:before,
-#block-comingsoon span:after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-bottom: 1px solid #55A5B7;
-    border-top: 1px solid #55A5B7;
-    top: 8px;
-    width: 30vw;
-}
+// #block-comingsoon span:before,
+// #block-comingsoon span:after {
+//     content: "";
+//     position: absolute;
+//     height: 30em;
+//     border-top: solid 5px #001002;
+//     top: 1em;
+//     width: 30vw;
+// }
 
-#block-comingsoon span:before {
-    right: 100%;
-    margin-right: 0;
-}
+// #block-comingsoon span:before {
+//     right: 100%;
+//     margin-right: 0;
+// }
 
-#block-comingsoon span:after {
-    left: 100%;
-    margin-left: 0;
-}
+// #block-comingsoon span:after {
+//     left: 100%;
+//     margin-left: 0;
+// }
 
 
 // .container .jumbotron, .container-fluid .jumbotron {
-//  background: transparent;
-//  border: solid 1px whitesmoke;
+ // background: transparent;
+//  border: solid 1px $lightblue;
 //  border-radius: 0;
 //  border-right: 0;
 //  border-left: 0;
-//  color: whitesmoke;
+ // color: $lightblue;
 // }
 
+#block-aboutbelleayremusicfestival {
+    background: $deepgreen;    
+    color: $lightblue;   
+}
+
+div#block-mailinglistsignupform {
+    background: rgba(175, 196, 175, 0.9);
+    h2 {
+        font-size: 1em;
+        line-height: 5.5vw;
+        font-weight: 400;
+        @include breakpoint(sm) { 
+            font-size: 1.1em;
+            margin-bottom: 0; 
+        }
+    }
+}
+
+#block-sociallinks {
+    background: $lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    a {
+        display: block;
+        font-size: 3vh;
+        color: darkgray;
+        margin: 2vh;
+        @include breakpoint(sm) {
+            font-size: 4vh;
+            &:after {
+                content: " · ";
+            }
+        }
+    }
+}
+
+#block-inthenews {
+    background: $deepgreen;
+    color: $lightblue;
+    border-bottom: solid 1px lighten($deepgreen, 10%);
+    @include breakpoint(sm) { 
+        display: flex; 
+        flex-direction: column;
+        width: 50%;
+    }
+    a { color: $seafoamgreen; }
+    ul { padding: 1vh 3vh 1vh 5vw; }
+}
+
+#block-embeddedsoundcloudplaylist {
+    background: $deepgreen;
+    color: $lightblue;
+    @include breakpoint(sm) { 
+        display: flex; 
+        flex-direction: column;
+        width: 50%;
+
+    }
+    a { color: lighten($deepgreen, 50%); }
+}
+
+// *** flexbox stuff *** //
+
+.region-front {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.region-front > div {
+    width: 100vw;
+    padding: 7vw;
+}
+
+
+//***************** heights **************/
+
+#block-teaserintro {
+    @include breakpoint(xs) { height: 72vh; }
+    @include breakpoint(sm) { height: 98vh; }
+}
+
+#block-aboutbelleayremusicfestival {
+    @include breakpoint(xs) { height: 24vh; }
+    @include breakpoint(sm) { height: 30vh; }
+}
+
+div#block-mailinglistsignupform {
+    @include breakpoint(xs) { height: 25vh; }
+    @include breakpoint(sm) { height: 22vh; }
+    @include breakpoint(lg) { height: 26vh; }
+}
+
+#block-sociallinks {
+    @include breakpoint(xs) { height: 68vh; }    
+}
+
+//***************** padding & margin overrides **************/
+
+
+div#block-mailinglistsignupform {
+    @include breakpoint(xs) { 
+        padding: 1vh 7vw; 
+    }
+    @include breakpoint(sm) { 
+        margin: 1vh 8.5vw;
+        margin-top: -30vh; 
+    }
+    @include breakpoint(md) { 
+        margin: 1vh 15.5vw;
+        margin-top: -30vh;
+    }
+}
+
+//***************** orders **************/
+.region-front > div {
+    @include breakpoint(xs) { order: 10; }
+}
+
+#block-sociallinks {
+    @include breakpoint(xs) { order: 3; }
+}
+
+#block-teaserintro {
+    @include breakpoint(xs) { order: 1; }
+}
+
+#block-aboutbelleayremusicfestival {
+   @include breakpoint(xs) { order: 3; }
+}
+
+div#block-mailinglistsignupform {
+    @include breakpoint(xs) { order: 2; }
+}
