@@ -7444,7 +7444,7 @@ button.close {
   display: flex;
   flex: 1 0 0;
   max-height: 2.75em;
-  background: #343D25;
+  background: #43710B;
   margin-top: 1px; }
   /* line 132, _ccform.scss */
   .ctct-custom-form button.ctct-button:hover {
@@ -7452,37 +7452,37 @@ button.close {
 
 /** globals **/
 /** colors **/
-/* line 16, style.scss */
+/* line 17, style.scss */
 * + * {
   margin-top: 1.618em; }
 
-/* line 18, style.scss */
+/* line 19, style.scss */
 * > div,
 li {
   margin-top: 0; }
 
-/* line 21, style.scss */
+/* line 22, style.scss */
 body {
   font-size: 14.5px;
   color: #03241B; }
 
 @media (max-width: 480px) {
-  /* line 30, style.scss */
+  /* line 31, style.scss */
   h2 {
     font-size: 21px; } }
 
-/* line 34, style.scss */
+/* line 35, style.scss */
 .container-fluid {
   padding: 0; }
 
-/* line 38, style.scss */
+/* line 39, style.scss */
 .has-icon:before {
   line-height: 1.428571429;
   vertical-align: top;
   margin: 0 4px 0 0; }
 
 /** front page **/
-/* line 57, style.scss */
+/* line 58, style.scss */
 #block-teaserintro {
   text-align: center;
   padding: 0.809em;
@@ -7498,234 +7498,369 @@ body {
   align-items: center;
   justify-content: center; }
 
-/* line 77, style.scss */
+/* line 78, style.scss */
 #block-teaserintro span {
   display: block;
-  margin: 0;
-  line-height: 0vw; }
+  margin: 0; }
+  @media (min-width: 320px) {
+    /* line 78, style.scss */
+    #block-teaserintro span {
+      line-height: 3rem; } }
+  @media (min-width: 768px) {
+    /* line 78, style.scss */
+    #block-teaserintro span {
+      line-height: 6rem; } }
 
-/* line 83, style.scss */
+/* line 85, style.scss */
 span.date {
   font-size: 3.25vw;
   letter-spacing: 1vw;
-  font-weight: 400;
-  line-height: 13vw !important; }
+  font-weight: 400; }
   @media (min-width: 992px) {
-    /* line 83, style.scss */
+    /* line 85, style.scss */
     span.date {
-      font-size: 2.25vw;
-      line-height: 9vw !important; } }
+      font-size: 2.25vw; } }
 
-/* line 94, style.scss */
+@media (max-width: 480px) {
+  /* line 96, style.scss */
+  #block-teaserintro span.location {
+    line-height: 1.75rem; } }
+
+/* line 100, style.scss */
 span.location {
   font-size: 4.5vw;
   letter-spacing: 1vw;
-  font-weight: 400;
-  line-height: 5.75vw !important; }
+  font-weight: 400; }
   @media (min-width: 992px) {
-    /* line 94, style.scss */
+    /* line 100, style.scss */
     span.location {
       font-size: 3.5vw;
       letter-spacing: 0.5vw; } }
   @media (min-width: 1200px) {
-    /* line 94, style.scss */
+    /* line 100, style.scss */
     span.location {
       font-size: 2.7vw;
-      letter-spacing: .6vw;
-      line-height: 0.75vw !important; } }
+      letter-spacing: .6vw; } }
 
-/* line 110, style.scss */
+/* line 116, style.scss */
 #block-teaserintro span.title {
   letter-spacing: -1vw;
-  line-height: 21.5vw;
+  line-height: 11.5vw;
   text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
   font-size: 12vw; }
-  @media (min-width: 768px) {
-    /* line 110, style.scss */
-    #block-teaserintro span.title {
-      margin-top: -18vh; } }
   @media (min-width: 992px) {
-    /* line 110, style.scss */
+    /* line 116, style.scss */
     #block-teaserintro span.title {
-      font-size: 10vw;
-      line-height: 16.5vw; } }
+      font-size: 10vw; } }
   @media (min-width: 1200px) {
-    /* line 110, style.scss */
+    /* line 116, style.scss */
     #block-teaserintro span.title {
       font-size: 8vw;
-      line-height: 14.5vw;
       letter-spacing: -.1em; } }
 
-/* line 133, style.scss */
+/* line 135, style.scss */
+span.lineup-soon {
+  font-weight: 400;
+  letter-spacing: .5vw; }
+  @media (min-width: 320px) {
+    /* line 135, style.scss */
+    span.lineup-soon {
+      font-size: 3vw; } }
+  @media (min-width: 768px) {
+    /* line 135, style.scss */
+    span.lineup-soon {
+      font-size: 2vw; } }
+
+/* line 146, style.scss */
 #block-aboutbelleayremusicfestival {
   height: 10vh; }
   @media (min-width: 768px) {
-    /* line 133, style.scss */
+    /* line 146, style.scss */
     #block-aboutbelleayremusicfestival {
       padding: 8vh 15.5vw; } }
 
-/* line 146, style.scss */
+/* line 159, style.scss */
 div#block-sociallinks * {
   margin: 0; }
 
-/* line 157, style.scss */
+/* line 163, style.scss */
+.social a {
+  margin-right: 1em;
+  color: #7ECFD9; }
+
+/* line 175, style.scss */
 #block-belleayre-branding {
   display: none; }
 
-/* line 208, style.scss */
+/* line 226, style.scss */
 #block-aboutbelleayremusicfestival {
-  background: #03241B;
-  color: #DBE4E2; }
-
-/* line 213, style.scss */
-div#block-mailinglistsignupform {
   background: rgba(175, 196, 175, 0.9); }
-  /* line 215, style.scss */
+
+/* line 232, style.scss */
+div#block-mailinglistsignupform {
+  font-weight: 300;
+  background: #03241B;
+  color: #DBE4E2;
+  text-align: center; }
+  /* line 238, style.scss */
   div#block-mailinglistsignupform h2 {
     font-size: 1em;
     line-height: 5.5vw;
-    font-weight: 400; }
+    font-weight: 300; }
     @media (min-width: 768px) {
-      /* line 215, style.scss */
+      /* line 238, style.scss */
       div#block-mailinglistsignupform h2 {
         font-size: 1.1em;
         margin-bottom: 0; } }
 
-/* line 226, style.scss */
+/* line 249, style.scss */
 #block-sociallinks {
-  background: #DBE4E2;
+  background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center; }
-  /* line 231, style.scss */
+  /* line 254, style.scss */
   #block-sociallinks a {
     display: block;
     font-size: 3vh;
-    color: darkgray;
+    color: #657D82;
     margin: 2vh; }
-    @media (min-width: 768px) {
-      /* line 231, style.scss */
+    @media (max-width: 480px) {
+      /* line 254, style.scss */
       #block-sociallinks a {
         font-size: 4vh; }
-        /* line 238, style.scss */
+        /* line 261, style.scss */
         #block-sociallinks a:after {
           content: " · "; } }
 
-/* line 245, style.scss */
+/* line 268, style.scss */
 #block-inthenews {
-  background: #03241B;
-  color: #DBE4E2;
-  border-bottom: solid 1px #07533e; }
+  font-weight: 400;
+  background: #EFEFEF;
+  color: #1C2120;
+  font-family: Georgia;
+  border-bottom: solid 1px #07533e;
+  font-size: 1.777rem;
+  line-height: 5.1rem;
+  padding: 8vh 6vw;
+  font-size: 2.2rem;
+  text-align: center; }
   @media (min-width: 768px) {
-    /* line 245, style.scss */
+    /* line 268, style.scss */
     #block-inthenews {
       display: flex;
-      flex-direction: column;
-      width: 50%; } }
-  /* line 254, style.scss */
+      flex-direction: column; } }
+  /* line 284, style.scss */
   #block-inthenews a {
-    color: #72CCB3; }
-  /* line 255, style.scss */
+    color: #69B110; }
+  /* line 285, style.scss */
   #block-inthenews ul {
-    padding: 1vh 3vh 1vh 5vw; }
+    padding: 1vh 3vh 1vh 5vw;
+    list-style-type: none; }
+  /* line 289, style.scss */
+  #block-inthenews h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-family: Helvetica Neue; }
 
-/* line 258, style.scss */
+/* line 296, style.scss */
 #block-embeddedsoundcloudplaylist {
-  background: #03241B;
-  color: #DBE4E2; }
+  font-weight: 400;
+  background: #EFEFEF;
+  font-family: Georgia;
+  color: #1C2120; }
   @media (min-width: 768px) {
-    /* line 258, style.scss */
+    /* line 296, style.scss */
     #block-embeddedsoundcloudplaylist {
       display: flex;
-      flex-direction: column;
-      width: 50%; } }
-  /* line 267, style.scss */
+      flex-direction: column; } }
+  /* line 307, style.scss */
   #block-embeddedsoundcloudplaylist a {
-    color: #38eebd; }
+    color: #e3fac6; }
+  /* line 308, style.scss */
+  #block-embeddedsoundcloudplaylist h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-family: Helvetica Neue; }
 
-/* line 272, style.scss */
+/* line 315, style.scss */
+div#block-thankyou {
+  font-size: 2.5vw;
+  padding: 7vw 14vw;
+  text-align: center;
+  line-height: 1.5em;
+  color: #0A5842;
+  font-style: normal;
+  font-weight: 300; }
+  /* line 323, style.scss */
+  div#block-thankyou h2 {
+    font-size: 2em;
+    font-style: normal;
+    color: #A2ADA4;
+    font-family: Georgia; }
+
+/* line 331, style.scss */
+div#block-endingblurb {
+  background: black;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: .9em;
+  font-weight: 300;
+  letter-spacing: .25px;
+  line-height: 1.8em;
+  text-align: center;
+  padding: 3vh 10vh; }
+
+/* line 342, style.scss */
+div#block-contactinfo {
+  background: black;
+  text-align: center;
+  font-size: .9em;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: .25px;
+  font-weight: 300;
+  margin: 0;
+  padding: 1vh; }
+
+/* line 353, style.scss */
+div#block-section2anchor {
+  height: 0px; }
+
+/* line 364, style.scss */
+.scroll-arrow a {
+  display: block;
+  text-align: center;
+  border-radius: 43vh;
+  width: 13.5vh;
+  margin: 0 auto;
+  font-size: 9.5vh;
+  background: #03241B;
+  color: #155F4B;
+  font-weight: 300;
+  border: 0;
+  text-shadow: 0 1px 0 #04231a; }
+  /* line 376, style.scss */
+  .scroll-arrow a:hover, .scroll-arrow a:focus, .scroll-arrow a:active {
+    text-decoration: none;
+    font-weight: 300;
+    color: #A0D2D8;
+    background: #03241b;
+    border-color: #03241b; }
+
+/* line 388, style.scss */
+footer {
+  margin: 0;
+  border-top: solid 1px; }
+
+/* line 395, style.scss */
 .region-front {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
-/* line 278, style.scss */
+/* line 401, style.scss */
 .region-front > div {
   width: 100vw;
   padding: 7vw; }
 
 @media (min-width: 320px) {
-  /* line 286, style.scss */
+  /* line 409, style.scss */
   #block-teaserintro {
     height: 72vh; } }
 @media (min-width: 768px) {
-  /* line 286, style.scss */
+  /* line 409, style.scss */
   #block-teaserintro {
-    height: 98vh; } }
+    height: 95vh; } }
 
 @media (min-width: 320px) {
-  /* line 291, style.scss */
+  /* line 414, style.scss */
   #block-aboutbelleayremusicfestival {
     height: 24vh; } }
 @media (min-width: 768px) {
-  /* line 291, style.scss */
+  /* line 414, style.scss */
   #block-aboutbelleayremusicfestival {
     height: 30vh; } }
 
 @media (min-width: 320px) {
-  /* line 296, style.scss */
+  /* line 419, style.scss */
   div#block-mailinglistsignupform {
     height: 25vh; } }
 @media (min-width: 768px) {
-  /* line 296, style.scss */
+  /* line 419, style.scss */
   div#block-mailinglistsignupform {
-    height: 22vh; } }
-@media (min-width: 1200px) {
-  /* line 296, style.scss */
-  div#block-mailinglistsignupform {
-    height: 26vh; } }
+    height: 30vh; } }
 
 @media (min-width: 320px) {
-  /* line 302, style.scss */
+  /* line 425, style.scss */
   #block-sociallinks {
     height: 68vh; } }
 
 @media (min-width: 320px) {
-  /* line 309, style.scss */
-  div#block-mailinglistsignupform {
+  /* line 432, style.scss */
+  div#block-aboutbelleayremusicfestival {
     padding: 1vh 7vw; } }
 @media (min-width: 768px) {
-  /* line 309, style.scss */
-  div#block-mailinglistsignupform {
+  /* line 432, style.scss */
+  div#block-aboutbelleayremusicfestival {
     margin: 1vh 8.5vw;
     margin-top: -30vh; } }
 @media (min-width: 992px) {
-  /* line 309, style.scss */
-  div#block-mailinglistsignupform {
+  /* line 432, style.scss */
+  div#block-aboutbelleayremusicfestival {
     margin: 1vh 15.5vw;
     margin-top: -30vh; } }
 
+/* line 446, style.scss */
+div#block-mailinglistsignupform {
+  padding: 1vw 7vw; }
+
 @media (min-width: 320px) {
-  /* line 324, style.scss */
+  /* line 451, style.scss */
   .region-front > div {
     order: 10; } }
 
 @media (min-width: 320px) {
-  /* line 328, style.scss */
+  /* line 455, style.scss */
   #block-sociallinks {
-    order: 3; } }
+    order: 9; } }
 
 @media (min-width: 320px) {
-  /* line 332, style.scss */
+  /* line 459, style.scss */
   #block-teaserintro {
-    order: 1; } }
+    order: 0; } }
+
+/* line 463, style.scss */
+#block-aboutbelleayremusicfestival {
+  display: none; }
+  @media (min-width: 320px) {
+    /* line 463, style.scss */
+    #block-aboutbelleayremusicfestival {
+      order: 1; } }
 
 @media (min-width: 320px) {
-  /* line 336, style.scss */
-  #block-aboutbelleayremusicfestival {
+  /* line 468, style.scss */
+  div#block-mailinglistsignupform {
+    order: 2; } }
+
+@media (min-width: 320px) {
+  /* line 472, style.scss */
+  #block-inthenews {
     order: 3; } }
 
 @media (min-width: 320px) {
-  /* line 340, style.scss */
-  div#block-mailinglistsignupform {
+  /* line 476, style.scss */
+  #block-embeddedsoundcloudplaylist {
+    order: 4; } }
+
+@media (min-width: 320px) {
+  /* line 480, style.scss */
+  div#block-thankyou {
+    order: 8; } }
+
+@media (min-width: 320px) {
+  /* line 484, style.scss */
+  div#block-section2anchor {
     order: 2; } }
