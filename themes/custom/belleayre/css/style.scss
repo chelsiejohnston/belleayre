@@ -163,6 +163,8 @@ div#block-sociallinks * {
 .social a {
     margin-right: 1em;
     color: $skyblue;
+    @include breakpoint(xs) { display: block; }
+    @include breakpoint(sm) { display: inline; }
 }
 
 header {
@@ -272,7 +274,7 @@ div#block-mailinglistsignupform {
     font-family: Georgia;
     border-bottom: solid 1px lighten($deepgreen, 10%);
     font-size: 1.777rem;
-    line-height: 5.1rem;
+    line-height: 1.1em;
     padding: 8vh 6vw;
     font-size: 2.2rem;
     text-align: center;
@@ -313,7 +315,9 @@ div#block-mailinglistsignupform {
     }
 
     div#block-thankyou {
-        font-size: 2.5vw;
+        @include breakpoint(xs) { font-size: 4.5vw; }
+        @include breakpoint(sm) { font-size: 2.5vw; }
+
         padding: 7vw 14vw;
         text-align: center;
         line-height: 1.5em;
@@ -417,9 +421,9 @@ footer {
 }
 
 div#block-mailinglistsignupform {
-    @include breakpoint(xs) { height: 25vh; }
-    @include breakpoint(sm) { height: 30vh; }
-    // @include breakpoint(lg) { height: 26vh; }
+    @include breakpoint(xs) { height: 54vh; }
+    @include breakpoint(sm) { height: 36vh; }
+    // @include breakpoint(md) { height: 36vh; }
 }
 
 #block-sociallinks {
@@ -445,6 +449,7 @@ div#block-aboutbelleayremusicfestival {
 
 div#block-mailinglistsignupform {
     padding: 1vw 7vw;
+    min-height: 17em;
 }
 
 //***************** orders **************/
