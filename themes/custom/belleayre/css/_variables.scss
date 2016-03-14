@@ -1,5 +1,20 @@
 /* I'm a dupe of the _variables.scss file! I can be used to override defaults from Bootstrap. */
 
+// special colorz
+
+
+/** globals **/
+$global-margin: 1.618em;
+$global-padding: 1.618em;
+// $link-color: #3B767F;
+
+/** colors **/
+
+$deepgreen: #03241B;
+$seafoamgreen: #72CCB3;
+$lightblue: #DBE4E2;
+$skyblue: #7ECFD9;
+
 // Useful classes
 
 @mixin hide-text {
