@@ -1,0 +1,24 @@
+.page-getting-here {
+
+	.left-1 { 
+		@include make-xs-column(6);
+	}
+	.right-1 {
+		@include make-xs-column(6);
+	}
+	.left-2 {
+		@include make-xs-column(4);		
+	}
+	.center-2 {
+		@include make-xs-column(4);		
+	}
+	.right-2 {
+		@include make-xs-column(4);		
+	}
+
+	.google-map {
+		h2 {
+			font-size: 0;
+		}
+	}
+}

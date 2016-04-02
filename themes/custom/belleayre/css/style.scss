@@ -1,7 +1,9 @@
 @import "bootstrap";
+@import "_system.scss"; /* styling from drupal */
 @import '_variables.scss'; /* override some defaults from Bootstrap */
 @import '_ccform.scss';
 @import '_front.scss';
+@import '_getting-here.scss';
 
 * + * { margin-top: $global-margin; }
 
@@ -15,6 +17,12 @@ body {
 
 body a {
     // color: $link-color;
+}
+
+body:not(.path-frontpage) {
+    main {
+        @include make-container;
+    }    
 }
 
 h2 {
@@ -39,17 +47,17 @@ h2 {
 
 /** header **/
 
-nav#block-mainnavigation {
+nav#block-utilitylinks {
     margin: 0;
     background: #353535;
     text-align: right;
 }
 
-nav#block-mainnavigation ul {    
+nav#block-utilitylinks ul {    
     margin: 0 auto;
 }
 
-nav#block-mainnavigation li {
+nav#block-utilitylinks li {
     display: inline-block;
     margin: 0 2em 0 0;
 
@@ -59,5 +67,20 @@ nav#block-mainnavigation li {
         display: block;
         padding: 6px 8px;
         font-size: .9em;
+    }
+}
+
+div#block-belleayre-branding {    
+    text-align: center;
+    padding: .5 * $global-padding;    
+    text-transform: uppercase;   
+    letter-spacing: .618px;    
+    font-weight: bold;
+    background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
+    background-size: cover;
+    background-position: center;
+    h1 a {
+        color: $deepgreen;
+        text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
     }
 }

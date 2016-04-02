@@ -6,10 +6,7 @@ libraries:
   - belleayre/global-css
   - belleayre/global-js
 stylesheets-remove:
-  - core/assets/vendor/normalize-css/normalize.css
-  - core/modules/system/css/system.module.css
-  - core/modules/system/css/system.theme.css
-  - core/modules/views/css/views.module.css
+  - core/assets/vendor/normalize-css/normalize.css  
 regions:
   header: 'Header'
   front: 'Front'

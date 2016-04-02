@@ -1,16 +1,5 @@
 /** front page **/
 
-#block-belleayre-branding { 
-    // height: calc(2vh + 1.618em); 
-    // text-align: center;
-    // padding: .5 * $global-padding;
-    // color: rgb(0, 0, 0); 
-    // text-transform: uppercase;   
-    // letter-spacing: .618px;
-    // mix-blend-mode: overlay;
-    // font-weight: bold;
-}
-
 #block-teaserintro {
     text-align: center;
     padding: .5 * $global-padding;
@@ -38,6 +27,10 @@
     @include breakpoint(sm) { line-height: 6rem; }
 }
 
+body.path-frontpage #block-teaserintro {
+    margin-top: -12vh;
+}
+
 span.date { 
     font-size: 3.25vw; 
     letter-spacing: 1vw;
@@ -51,6 +44,12 @@ span.date {
 
 #block-teaserintro span.location {
     @include breakpoint(0, $screen-xs) { line-height: 1.75rem; }
+}
+
+body.path-frontpage {
+    nav#block-mainnavigation {
+        z-index: 2;
+    }
 }
 
 span.location { 
@@ -204,7 +203,8 @@ div#block-mailinglistsignupform {
     }
 }
 
-#block-sociallinks {
+#block-sociallinks,
+div.sociallinks {
     background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
     display: flex;
     align-items: center;
@@ -347,6 +347,7 @@ div#block-mailinglistsignupform {
 
 footer {
     margin: 0;
+    margin-top: 4em;
     border-top: solid 1px;
 }
 
@@ -363,6 +364,12 @@ footer {
     padding: 7vw;
 }
 
+body:not(.path-frontpage) {
+    span.date {
+        font-size: 1.5em;
+        letter-spacing: 10px;
+    }
+}
 
 //***************** heights **************/
 
@@ -419,6 +426,10 @@ div#block-mailinglistsignupform {
 
 #block-teaserintro {
     @include breakpoint(xs) { order: 0; }
+}
+
+#block-views-block-artists-block-1 {
+    @include breakpoint(xs) { order: 1; }   
 }
 
 #block-aboutbelleayremusicfestival {
