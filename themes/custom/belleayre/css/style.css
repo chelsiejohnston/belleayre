@@ -8240,3 +8240,8 @@ body:not(.path-frontpage) .artist-row {
     body:not(.path-frontpage) .artist-row {
       float: left;
       width: 25%; } }
+
+/* line 129, style.scss */
+img {
+  width: 100%;
+  height: auto; }

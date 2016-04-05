@@ -125,3 +125,8 @@ body:not(.path-frontpage) {
         @include make-sm-column(3, 1em);
     }
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
