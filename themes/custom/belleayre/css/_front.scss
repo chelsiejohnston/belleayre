@@ -28,7 +28,7 @@
 }
 
 body.path-frontpage #block-teaserintro {
-    margin-top: -12vh;
+    margin-top: -11vh;
 }
 
 span.date { 
@@ -76,6 +76,7 @@ span.location {
     text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
     // @include breakpoint(sm) { margin-top: -18vh; }
     font-size: 12vw;
+    margin-top: 15vh;
     @include breakpoint(md) { 
         font-size: 10vw;
         // line-height: 16.5vw;
