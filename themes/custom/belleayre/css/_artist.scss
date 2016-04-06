@@ -9,6 +9,11 @@ body.page-node-type-artist {
 		@include make-xs-column(12);		
 		@include make-sm-column(4, 2em);
 		padding-left: 0;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
 	}
 
 	.artist-content {

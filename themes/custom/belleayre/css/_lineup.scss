@@ -37,7 +37,7 @@
 		}
 		p {
 			
-			font-size: 1.3em;
+			//font-size: 1.3em;
 			font-weight: 300;
 		}
 	}
@@ -45,5 +45,13 @@
 	img {
 		width: 100%;
 		height: auto;
+	}
+}
+
+.path-artists { 
+	.views-field-body {
+
+		font-size: 18.85px;
+		font-weight: 300;
 	}
 }

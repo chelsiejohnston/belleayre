@@ -8091,7 +8091,11 @@ body.page-node-type-artist .artist-image {
     body.page-node-type-artist .artist-image {
       float: left;
       width: 33.3333333333%; } }
-/* line 14, _artist.scss */
+  /* line 13, _artist.scss */
+  body.page-node-type-artist .artist-image img {
+    max-width: 100%;
+    height: auto; }
+/* line 19, _artist.scss */
 body.page-node-type-artist .artist-content {
   position: relative;
   float: left;
@@ -8106,7 +8110,7 @@ body.page-node-type-artist .artist-content {
   font-size: 1.312em;
   font-weight: 300; }
   @media (min-width: 768px) {
-    /* line 14, _artist.scss */
+    /* line 19, _artist.scss */
     body.page-node-type-artist .artist-content {
       float: left;
       width: 66.6666666667%; } }
@@ -8162,12 +8166,16 @@ body.page-node-type-artist .artist-content {
     color: #0B4625; }
   /* line 38, _lineup.scss */
   .path-artists .artist-row p {
-    font-size: 1.3em;
     font-weight: 300; }
 /* line 45, _lineup.scss */
 .path-artists img {
   width: 100%;
   height: auto; }
+
+/* line 52, _lineup.scss */
+.path-artists .views-field-body {
+  font-size: 18.85px;
+  font-weight: 300; }
 
 /* line 10, style.scss */
 * + * {
