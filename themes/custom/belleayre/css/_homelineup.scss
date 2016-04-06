@@ -1,0 +1,163 @@
+$green: #7D9D3F;
+$darkblue: #08353F;
+$fadedblue: #3D646C;
+$black: #03241B;
+
+.lineup-container {
+	background: #FEFFFF;
+	@include make-xs-column(12, 2em);		
+
+	a, a > span {
+		&:hover {
+			text-decoration: none;
+			color: #4C6E12;
+		}
+	}
+
+	hr {
+
+		border-top: 3px solid #eeeeee;
+		margin-top: 50px;
+		margin-bottom: 0px;
+		border-bottom: solid 4px rgba(125, 157, 63, 0.48);
+
+	}
+}
+
+div.lineup-block {
+	min-height: 50vh;
+	> div {
+		margin: 1em 0;
+	}
+
+	&:first-child {
+		h3 {
+			margin-top: 0;	
+		}
+	}
+}
+
+div.lineup-inset {
+	background: rgb(125, 157, 63);
+	padding: 1em;
+	margin-top: 1.618em;
+	margin-bottom: 1.618em;
+	color: #F4F7EE;
+	font-size: 1.5em;
+	font-weight: 300;
+	text-align: center;
+	border-top: solid 5px #8BB18C;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	border-radius: 10px;
+	margin-bottom: -10px;
+}
+
+#block-customlineup {
+	background: #03241B;
+	h2 {
+		text-align: center;
+		color: #7ECFD9;
+		font-size: 70px;
+		margin: 0 0 1em 0;
+		font-weight: 300;
+		text-transform: uppercase;
+		letter-spacing: 11px;
+	}
+}
+
+h3.lineup-date {	
+	// display: block;
+	// font-size: 30px;
+	// font-weight: 400;
+	// margin-bottom: 5px;
+	// text-transform: uppercase;
+	// color: $green;   
+
+	display: block;
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	background: #E7EDEE;
+	color: #42645B;
+	/* font-weight: 300; */
+	font-size: 25px;
+	padding: .5em;
+	/* text-align: center; */
+	letter-spacing: 1px;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+span.artist.headliner {
+	margin-top: 0;
+	font-size: 53px;
+	font-weight: 600;
+	line-height: 45px;
+	// color: $darkblue;
+
+	span.smaller {
+		font-size: 35px;
+		// color: $darkblue;
+	}
+
+	a {
+		// color: $darkblue;
+	}
+}
+
+span.artist.supporting {
+	margin-top: 0;	
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 30.6px;
+	text-transform: uppercase;
+	// color: $green;
+
+	a {
+		// color: $green;
+	}
+	
+	span.smaller {
+		font-size: 21px;
+		// text-transform: lowercase;	
+		// color: $green;	
+
+		&.block {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+span.smaller {	
+	// color: $green;
+}
+
+span.doors {
+	margin-top: 0;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 18.3px;
+	text-transform: uppercase;
+	margin: 1em 0;
+	display: block;
+	color: #7D7F7F;   
+}
+
+span.block {
+	display: block;
+}
+
+span.inline-block {
+	display: inline-block;
+}
+
+.main {
+	color: $darkblue;
+}
+
+.secondary {
+	color: $fadedblue;
+}

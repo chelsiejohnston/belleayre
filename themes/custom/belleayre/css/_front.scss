@@ -5,7 +5,8 @@
     padding: .5 * $global-padding;
     background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
+    background-attachment: fixed;
     // color: rgb(0, 0, 0);    
     text-transform: uppercase;  
     letter-spacing: .618px;
@@ -18,6 +19,19 @@
     display: flex;
     align-items: center;
     justify-content: center;  
+
+    .logo-date, .logo-location {
+        font-size: 3.5vh;
+    }
+
+    .logo-image {
+        width: 38vw;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 #block-teaserintro span { 
@@ -215,6 +229,7 @@ div.sociallinks {
         font-size: 3vh;
         color: #657D82;
         margin: 2vh;
+        font-weight: 300;
         @include breakpoint(0, $screen-xs) {
             font-size: 4vh;
             &:after {
@@ -347,9 +362,15 @@ div.sociallinks {
 }
 
 footer {
-    margin: 0;
-    margin-top: 4em;
+    margin: 0;    
     border-top: solid 1px;
+    a {
+        color: white;
+    }
+}
+
+body:not(.path-frontpage) footer {
+    margin-top: 4em;
 }
 
 // *** flexbox stuff *** //
@@ -429,7 +450,8 @@ div#block-mailinglistsignupform {
     @include breakpoint(xs) { order: 0; }
 }
 
-#block-views-block-artists-block-1 {
+#block-views-block-artists-block-1,
+#block-customlineup {
     @include breakpoint(xs) { order: 1; }   
 }
 

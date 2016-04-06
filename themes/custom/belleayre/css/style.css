@@ -7599,7 +7599,8 @@ div.tabs {
   padding: 0.809em;
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   background-size: cover;
-  background-position: center;
+  background-position: top center;
+  background-attachment: fixed;
   text-transform: uppercase;
   letter-spacing: .618px;
   font-weight: bold;
@@ -7608,60 +7609,71 @@ div.tabs {
   display: flex;
   align-items: center;
   justify-content: center; }
+  /* line 23, _front.scss */
+  #block-teaserintro .logo-date, #block-teaserintro .logo-location {
+    font-size: 3.5vh; }
+  /* line 27, _front.scss */
+  #block-teaserintro .logo-image {
+    width: 38vw;
+    margin: 0 auto; }
+    /* line 30, _front.scss */
+    #block-teaserintro .logo-image img {
+      width: 100%;
+      height: auto; }
 
-/* line 23, _front.scss */
+/* line 37, _front.scss */
 #block-teaserintro span {
   display: block;
   margin: 0; }
   @media (min-width: 320px) {
-    /* line 23, _front.scss */
+    /* line 37, _front.scss */
     #block-teaserintro span {
       line-height: 3rem; } }
   @media (min-width: 768px) {
-    /* line 23, _front.scss */
+    /* line 37, _front.scss */
     #block-teaserintro span {
       line-height: 6rem; } }
 
-/* line 30, _front.scss */
+/* line 44, _front.scss */
 body.path-frontpage #block-teaserintro {
   margin-top: -11vh; }
 
-/* line 34, _front.scss */
+/* line 48, _front.scss */
 span.date {
   font-size: 3.25vw;
   letter-spacing: 1vw;
   font-weight: 400; }
   @media (min-width: 992px) {
-    /* line 34, _front.scss */
+    /* line 48, _front.scss */
     span.date {
       font-size: 2.25vw; } }
 
 @media (max-width: 480px) {
-  /* line 45, _front.scss */
+  /* line 59, _front.scss */
   #block-teaserintro span.location {
     line-height: 1.75rem; } }
 
-/* line 50, _front.scss */
+/* line 64, _front.scss */
 body.path-frontpage nav#block-mainnavigation {
   z-index: 2; }
 
-/* line 55, _front.scss */
+/* line 69, _front.scss */
 span.location {
   font-size: 4.5vw;
   letter-spacing: 1vw;
   font-weight: 400; }
   @media (min-width: 992px) {
-    /* line 55, _front.scss */
+    /* line 69, _front.scss */
     span.location {
       font-size: 3.5vw;
       letter-spacing: 0.5vw; } }
   @media (min-width: 1200px) {
-    /* line 55, _front.scss */
+    /* line 69, _front.scss */
     span.location {
       font-size: 2.7vw;
       letter-spacing: .6vw; } }
 
-/* line 71, _front.scss */
+/* line 85, _front.scss */
 #block-teaserintro span.title {
   letter-spacing: -1vw;
   line-height: 11.5vw;
@@ -7669,99 +7681,100 @@ span.location {
   font-size: 12vw;
   margin-top: 15vh; }
   @media (min-width: 992px) {
-    /* line 71, _front.scss */
+    /* line 85, _front.scss */
     #block-teaserintro span.title {
       font-size: 10vw; } }
   @media (min-width: 1200px) {
-    /* line 71, _front.scss */
+    /* line 85, _front.scss */
     #block-teaserintro span.title {
       font-size: 8vw;
       letter-spacing: -.1em; } }
 
-/* line 91, _front.scss */
+/* line 105, _front.scss */
 span.lineup-soon {
   font-weight: 400;
   letter-spacing: .5vw; }
   @media (min-width: 320px) {
-    /* line 91, _front.scss */
+    /* line 105, _front.scss */
     span.lineup-soon {
       font-size: 3vw; } }
   @media (min-width: 768px) {
-    /* line 91, _front.scss */
+    /* line 105, _front.scss */
     span.lineup-soon {
       font-size: 2vw; } }
 
-/* line 102, _front.scss */
+/* line 116, _front.scss */
 #block-aboutbelleayremusicfestival {
   height: 10vh; }
   @media (min-width: 768px) {
-    /* line 102, _front.scss */
+    /* line 116, _front.scss */
     #block-aboutbelleayremusicfestival {
       padding: 8vh 15.5vw; } }
 
-/* line 115, _front.scss */
+/* line 129, _front.scss */
 div#block-sociallinks * {
   margin: 0; }
 
-/* line 119, _front.scss */
+/* line 133, _front.scss */
 .social a {
   margin-right: 1em;
   color: #7ECFD9; }
   @media (min-width: 320px) {
-    /* line 119, _front.scss */
+    /* line 133, _front.scss */
     .social a {
       display: block; } }
   @media (min-width: 768px) {
-    /* line 119, _front.scss */
+    /* line 133, _front.scss */
     .social a {
       display: inline; } }
 
-/* line 184, _front.scss */
+/* line 198, _front.scss */
 #block-aboutbelleayremusicfestival {
   background: rgba(175, 196, 175, 0.9); }
 
-/* line 190, _front.scss */
+/* line 204, _front.scss */
 div#block-mailinglistsignupform {
   font-weight: 300;
   background: #03241B;
   color: #DBE4E2;
   text-align: center; }
-  /* line 196, _front.scss */
+  /* line 210, _front.scss */
   div#block-mailinglistsignupform h2 {
     font-size: 1em;
     line-height: 5.5vw;
     font-weight: 300; }
     @media (min-width: 768px) {
-      /* line 196, _front.scss */
+      /* line 210, _front.scss */
       div#block-mailinglistsignupform h2 {
         font-size: 1.1em;
         margin-bottom: 0; } }
 
-/* line 207, _front.scss */
+/* line 221, _front.scss */
 #block-sociallinks,
 div.sociallinks {
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center; }
-  /* line 213, _front.scss */
+  /* line 227, _front.scss */
   #block-sociallinks a,
   div.sociallinks a {
     display: block;
     font-size: 3vh;
     color: #657D82;
-    margin: 2vh; }
+    margin: 2vh;
+    font-weight: 300; }
     @media (max-width: 480px) {
-      /* line 213, _front.scss */
+      /* line 227, _front.scss */
       #block-sociallinks a,
       div.sociallinks a {
         font-size: 4vh; }
-        /* line 220, _front.scss */
+        /* line 235, _front.scss */
         #block-sociallinks a:after,
         div.sociallinks a:after {
           content: " · "; } }
 
-/* line 227, _front.scss */
+/* line 242, _front.scss */
 #block-inthenews {
   font-weight: 400;
   background: #EFEFEF;
@@ -7774,18 +7787,18 @@ div.sociallinks {
   font-size: 2.2rem;
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 227, _front.scss */
+    /* line 242, _front.scss */
     #block-inthenews {
       display: flex;
       flex-direction: column; } }
-  /* line 243, _front.scss */
+  /* line 258, _front.scss */
   #block-inthenews a {
     color: #69B110; }
-  /* line 244, _front.scss */
+  /* line 259, _front.scss */
   #block-inthenews ul {
     padding: 1vh 3vh 1vh 5vw;
     list-style-type: none; }
-  /* line 248, _front.scss */
+  /* line 263, _front.scss */
   #block-inthenews h2 {
     text-transform: uppercase;
     font-weight: 400;
@@ -7793,21 +7806,21 @@ div.sociallinks {
     text-align: center;
     font-family: Helvetica Neue; }
 
-/* line 255, _front.scss */
+/* line 270, _front.scss */
 #block-embeddedsoundcloudplaylist {
   font-weight: 400;
   background: #EFEFEF;
   font-family: Georgia;
   color: #1C2120; }
   @media (min-width: 768px) {
-    /* line 255, _front.scss */
+    /* line 270, _front.scss */
     #block-embeddedsoundcloudplaylist {
       display: flex;
       flex-direction: column; } }
-  /* line 266, _front.scss */
+  /* line 281, _front.scss */
   #block-embeddedsoundcloudplaylist a {
     color: #e3fac6; }
-  /* line 267, _front.scss */
+  /* line 282, _front.scss */
   #block-embeddedsoundcloudplaylist h2 {
     text-transform: uppercase;
     font-weight: 400;
@@ -7815,7 +7828,7 @@ div.sociallinks {
     text-align: center;
     font-family: Helvetica Neue; }
 
-/* line 274, _front.scss */
+/* line 289, _front.scss */
 div#block-thankyou {
   padding: 7vw 14vw;
   text-align: center;
@@ -7824,21 +7837,21 @@ div#block-thankyou {
   font-style: normal;
   font-weight: 300; }
   @media (min-width: 320px) {
-    /* line 274, _front.scss */
+    /* line 289, _front.scss */
     div#block-thankyou {
       font-size: 4.5vw; } }
   @media (min-width: 768px) {
-    /* line 274, _front.scss */
+    /* line 289, _front.scss */
     div#block-thankyou {
       font-size: 2.5vw; } }
-  /* line 284, _front.scss */
+  /* line 299, _front.scss */
   div#block-thankyou h2 {
     font-size: 2em;
     font-style: normal;
     color: #A2ADA4;
     font-family: Georgia; }
 
-/* line 292, _front.scss */
+/* line 307, _front.scss */
 div#block-endingblurb {
   background: black;
   color: rgba(255, 255, 255, 0.8);
@@ -7849,7 +7862,7 @@ div#block-endingblurb {
   text-align: center;
   padding: 3vh 10vh; }
 
-/* line 303, _front.scss */
+/* line 318, _front.scss */
 div#block-contactinfo {
   background: black;
   text-align: center;
@@ -7860,11 +7873,11 @@ div#block-contactinfo {
   margin: 0;
   padding: 1vh; }
 
-/* line 314, _front.scss */
+/* line 329, _front.scss */
 div#block-section2anchor {
   height: 0px; }
 
-/* line 325, _front.scss */
+/* line 340, _front.scss */
 .scroll-arrow a {
   display: block;
   text-align: center;
@@ -7877,7 +7890,7 @@ div#block-section2anchor {
   font-weight: 300;
   border: 0;
   text-shadow: 0 1px 0 #04231a; }
-  /* line 337, _front.scss */
+  /* line 352, _front.scss */
   .scroll-arrow a:hover, .scroll-arrow a:focus, .scroll-arrow a:active {
     text-decoration: none;
     font-weight: 300;
@@ -7885,134 +7898,141 @@ div#block-section2anchor {
     background: #03241b;
     border-color: #03241b; }
 
-/* line 349, _front.scss */
+/* line 364, _front.scss */
 footer {
   margin: 0;
-  margin-top: 4em;
   border-top: solid 1px; }
+  /* line 367, _front.scss */
+  footer a {
+    color: white; }
 
-/* line 357, _front.scss */
+/* line 372, _front.scss */
+body:not(.path-frontpage) footer {
+  margin-top: 4em; }
+
+/* line 378, _front.scss */
 .region-front {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
-/* line 363, _front.scss */
+/* line 384, _front.scss */
 .region-front > div {
   width: 100vw;
   padding: 7vw; }
 
-/* line 369, _front.scss */
+/* line 390, _front.scss */
 body:not(.path-frontpage) span.date {
   font-size: 1.5em;
   letter-spacing: 10px; }
 
 @media (min-width: 320px) {
-  /* line 377, _front.scss */
+  /* line 398, _front.scss */
   #block-teaserintro {
     height: 72vh; } }
 @media (min-width: 768px) {
-  /* line 377, _front.scss */
+  /* line 398, _front.scss */
   #block-teaserintro {
     height: 95vh; } }
 
 @media (min-width: 320px) {
-  /* line 382, _front.scss */
+  /* line 403, _front.scss */
   #block-aboutbelleayremusicfestival {
     height: 24vh; } }
 @media (min-width: 768px) {
-  /* line 382, _front.scss */
+  /* line 403, _front.scss */
   #block-aboutbelleayremusicfestival {
     height: 30vh; } }
 
 @media (min-width: 768px) {
-  /* line 387, _front.scss */
+  /* line 408, _front.scss */
   div#block-mailinglistsignupform {
     height: 36vh; } }
 
 @media (min-width: 320px) {
-  /* line 393, _front.scss */
+  /* line 414, _front.scss */
   #block-sociallinks {
     height: 68vh; } }
 
 @media (min-width: 320px) {
-  /* line 400, _front.scss */
+  /* line 421, _front.scss */
   div#block-aboutbelleayremusicfestival {
     padding: 1vh 7vw; } }
 @media (min-width: 768px) {
-  /* line 400, _front.scss */
+  /* line 421, _front.scss */
   div#block-aboutbelleayremusicfestival {
     margin: 1vh 8.5vw;
     margin-top: -30vh; } }
 @media (min-width: 992px) {
-  /* line 400, _front.scss */
+  /* line 421, _front.scss */
   div#block-aboutbelleayremusicfestival {
     margin: 1vh 15.5vw;
     margin-top: -30vh; } }
 
-/* line 414, _front.scss */
+/* line 435, _front.scss */
 div#block-mailinglistsignupform {
   padding: 1vw 7vw;
   min-height: 17em; }
 
 @media (min-width: 320px) {
-  /* line 420, _front.scss */
+  /* line 441, _front.scss */
   .region-front > div {
     order: 10; } }
 
 @media (min-width: 320px) {
-  /* line 424, _front.scss */
+  /* line 445, _front.scss */
   #block-sociallinks {
     order: 9; } }
 
 @media (min-width: 320px) {
-  /* line 428, _front.scss */
+  /* line 449, _front.scss */
   #block-teaserintro {
     order: 0; } }
 
 @media (min-width: 320px) {
-  /* line 432, _front.scss */
-  #block-views-block-artists-block-1 {
+  /* line 453, _front.scss */
+  #block-views-block-artists-block-1,
+  #block-customlineup {
     order: 1; } }
 
-/* line 436, _front.scss */
+/* line 458, _front.scss */
 #block-aboutbelleayremusicfestival {
   display: none; }
   @media (min-width: 320px) {
-    /* line 436, _front.scss */
+    /* line 458, _front.scss */
     #block-aboutbelleayremusicfestival {
       order: 1; } }
 
 @media (min-width: 320px) {
-  /* line 441, _front.scss */
+  /* line 463, _front.scss */
   div#block-mailinglistsignupform {
     order: 2; } }
 
 @media (min-width: 320px) {
-  /* line 445, _front.scss */
+  /* line 467, _front.scss */
   #block-inthenews {
     order: 3; } }
 
-/* line 449, _front.scss */
+/* line 471, _front.scss */
 div#block-social1 {
   /** embedded social content feeds **/ }
   @media (min-width: 320px) {
-    /* line 449, _front.scss */
+    /* line 471, _front.scss */
     div#block-social1 {
       order: 4; } }
 
 @media (min-width: 320px) {
-  /* line 453, _front.scss */
+  /* line 475, _front.scss */
   #block-embeddedsoundcloudplaylist {
     order: 5; } }
 
 @media (min-width: 320px) {
-  /* line 457, _front.scss */
+  /* line 479, _front.scss */
   div#block-thankyou {
     order: 8; } }
 
 @media (min-width: 320px) {
-  /* line 461, _front.scss */
+  /* line 483, _front.scss */
   div#block-section2anchor {
     order: 2; } }
 
@@ -8177,21 +8197,149 @@ body.page-node-type-artist .artist-content {
   font-size: 18.85px;
   font-weight: 300; }
 
-/* line 10, style.scss */
+/* line 6, _homelineup.scss */
+.lineup-container {
+  background: #FEFFFF;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 1em;
+  padding-right: 1em; }
+  /* line 11, _homelineup.scss */
+  .lineup-container a:hover, .lineup-container a > span:hover {
+    text-decoration: none;
+    color: #4C6E12; }
+  /* line 17, _homelineup.scss */
+  .lineup-container hr {
+    border-top: 3px solid #eeeeee;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    border-bottom: solid 4px rgba(125, 157, 63, 0.48); }
+
+/* line 27, _homelineup.scss */
+div.lineup-block {
+  min-height: 50vh; }
+  /* line 29, _homelineup.scss */
+  div.lineup-block > div {
+    margin: 1em 0; }
+  /* line 34, _homelineup.scss */
+  div.lineup-block:first-child h3 {
+    margin-top: 0; }
+
+/* line 40, _homelineup.scss */
+div.lineup-inset {
+  background: #7d9d3f;
+  padding: 1em;
+  margin-top: 1.618em;
+  margin-bottom: 1.618em;
+  color: #F4F7EE;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  border-top: solid 5px #8BB18C;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  margin-bottom: -10px; }
+
+/* line 56, _homelineup.scss */
+#block-customlineup {
+  background: #03241B; }
+  /* line 58, _homelineup.scss */
+  #block-customlineup h2 {
+    text-align: center;
+    color: #7ECFD9;
+    font-size: 70px;
+    margin: 0 0 1em 0;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 11px; }
+
+/* line 69, _homelineup.scss */
+h3.lineup-date {
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  background: #E7EDEE;
+  color: #42645B;
+  /* font-weight: 300; */
+  font-size: 25px;
+  padding: .5em;
+  /* text-align: center; */
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 0; }
+
+/* line 93, _homelineup.scss */
+span.artist.headliner {
+  margin-top: 0;
+  font-size: 53px;
+  font-weight: 600;
+  line-height: 45px; }
+  /* line 100, _homelineup.scss */
+  span.artist.headliner span.smaller {
+    font-size: 35px; }
+
+/* line 110, _homelineup.scss */
+span.artist.supporting {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30.6px;
+  text-transform: uppercase; }
+  /* line 122, _homelineup.scss */
+  span.artist.supporting span.smaller {
+    font-size: 21px; }
+    /* line 127, _homelineup.scss */
+    span.artist.supporting span.smaller.block {
+      margin-top: 0;
+      margin-bottom: 0; }
+
+/* line 138, _homelineup.scss */
+span.doors {
+  margin-top: 0;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18.3px;
+  text-transform: uppercase;
+  margin: 1em 0;
+  display: block;
+  color: #7D7F7F; }
+
+/* line 149, _homelineup.scss */
+span.block {
+  display: block; }
+
+/* line 153, _homelineup.scss */
+span.inline-block {
+  display: inline-block; }
+
+/* line 157, _homelineup.scss */
+.main {
+  color: #08353F; }
+
+/* line 161, _homelineup.scss */
+.secondary {
+  color: #3D646C; }
+
+/* line 11, style.scss */
 * + * {
   margin-top: 1.618em; }
 
-/* line 12, style.scss */
+/* line 13, style.scss */
 * > div,
 li {
   margin-top: 0; }
 
-/* line 15, style.scss */
+/* line 16, style.scss */
 body {
   font-size: 14.5px;
   color: #03241B; }
 
-/* line 25, style.scss */
+/* line 26, style.scss */
 body:not(.path-frontpage) main {
   margin-right: auto;
   margin-left: auto;
@@ -8205,28 +8353,28 @@ body:not(.path-frontpage) main {
   body:not(.path-frontpage) main:after {
     clear: both; }
   @media (min-width: 768px) {
-    /* line 25, style.scss */
+    /* line 26, style.scss */
     body:not(.path-frontpage) main {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 25, style.scss */
+    /* line 26, style.scss */
     body:not(.path-frontpage) main {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 25, style.scss */
+    /* line 26, style.scss */
     body:not(.path-frontpage) main {
       width: 1170px; } }
 
 @media (max-width: 480px) {
-  /* line 30, style.scss */
+  /* line 31, style.scss */
   h2 {
     font-size: 21px; } }
 
-/* line 34, style.scss */
+/* line 35, style.scss */
 .container-fluid {
   padding: 0; }
 
-/* line 38, style.scss */
+/* line 39, style.scss */
 .has-icon:before {
   line-height: 1.428571429;
   vertical-align: top;
@@ -8242,21 +8390,22 @@ body:not(.path-frontpage) main {
   clear: both; }
 
 /** header **/
-/* line 52, style.scss */
+/* line 53, style.scss */
 nav#block-utilitylinks {
   margin: 0;
-  background: #353535;
-  text-align: right; }
+  background: rgba(8, 36, 28, 0.84);
+  text-align: right;
+  height: 3em; }
 
-/* line 58, style.scss */
+/* line 60, style.scss */
 nav#block-utilitylinks ul {
   margin: 0 auto; }
 
-/* line 62, style.scss */
+/* line 64, style.scss */
 nav#block-utilitylinks li {
   display: inline-block;
   margin: 0 2em 0 0; }
-  /* line 66, style.scss */
+  /* line 68, style.scss */
   nav#block-utilitylinks li a {
     color: #f2f3f5;
     font-weight: 300;
@@ -8264,11 +8413,11 @@ nav#block-utilitylinks li {
     padding: 6px 8px;
     font-size: .9em; }
 
-/* line 75, style.scss */
+/* line 77, style.scss */
 h1 {
   text-align: center; }
 
-/* line 79, style.scss */
+/* line 81, style.scss */
 #block-mainnavigation {
   margin-right: auto;
   margin-left: auto;
@@ -8282,18 +8431,18 @@ h1 {
   #block-mainnavigation:after {
     clear: both; }
   @media (min-width: 768px) {
-    /* line 79, style.scss */
+    /* line 81, style.scss */
     #block-mainnavigation {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 79, style.scss */
+    /* line 81, style.scss */
     #block-mainnavigation {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 79, style.scss */
+    /* line 81, style.scss */
     #block-mainnavigation {
       width: 1170px; } }
-  /* line 81, style.scss */
+  /* line 83, style.scss */
   #block-mainnavigation ul {
     position: relative;
     float: left;
@@ -8303,28 +8452,36 @@ h1 {
     padding-right: 0;
     list-style-type: none;
     text-align: center; }
-  /* line 87, style.scss */
+  /* line 89, style.scss */
   #block-mainnavigation li {
     display: inline-block; }
-  /* line 88, style.scss */
+  /* line 90, style.scss */
   #block-mainnavigation a {
-    background: black;
+    background: #7D9D3E;
     width: 11em;
     text-align: center;
     color: white;
     height: 3em;
     vertical-align: middle;
-    display: table-cell; }
+    display: table-cell;
+    font-weight: 300;
+    font-size: 1.1em;
+    letter-spacing: .5px;
+    border-top: solid 3px rgba(46, 70, 63, 0.38); }
+    /* line 102, style.scss */
+    #block-mainnavigation a:hover {
+      background: #66832D;
+      text-decoration: none; }
 
-/* line 99, style.scss */
+/* line 109, style.scss */
 body:not(.front) .sociallinks {
   background: transparent; }
-  /* line 101, style.scss */
+  /* line 111, style.scss */
   body:not(.front) .sociallinks a {
     display: inline-block;
     font-size: 1em; }
 
-/* line 107, style.scss */
+/* line 117, style.scss */
 div#block-belleayre-branding {
   text-align: center;
   padding: 0.809em;
@@ -8334,7 +8491,10 @@ div#block-belleayre-branding {
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center; }
-  /* line 116, style.scss */
+  /* line 126, style.scss */
   div#block-belleayre-branding h1 a {
     color: #03241B;
-    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2); }
+    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
+    max-width: 200px;
+    display: block;
+    margin: 0 auto; }
