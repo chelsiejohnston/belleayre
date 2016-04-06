@@ -8111,21 +8111,79 @@ body.page-node-type-artist .artist-content {
       float: left;
       width: 66.6666666667%; } }
 
-/* line 9, style.scss */
+/*** artists ***/
+/* line 4, _lineup.scss */
+.path-artists h3 {
+  text-align: center;
+  clear: both;
+  font-weight: 400;
+  color: #6a8e51;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-top: 4em;
+  padding-bottom: 1.618em; }
+  /* line 13, _lineup.scss */
+  .path-artists h3:nth-of-type(1) {
+    padding-top: 1em; }
+/* line 17, _lineup.scss */
+.path-artists .artist-row {
+  margin: 0.4em auto;
+  border-top: solid 1px #EAEAEA;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto; }
+  /* line 23, _lineup.scss */
+  .path-artists .artist-row .views-field-title {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left; }
+  /* line 27, _lineup.scss */
+  .path-artists .artist-row .views-field-field-image {
+    position: relative;
+    float: left;
+    width: 50%;
+    min-height: 1px;
+    padding-left: 1em;
+    padding-right: 1em; }
+  /* line 33, _lineup.scss */
+  .path-artists .artist-row a {
+    font-weight: 600;
+    font-size: 30px;
+    color: #0B4625; }
+  /* line 38, _lineup.scss */
+  .path-artists .artist-row p {
+    font-size: 1.3em;
+    font-weight: 300; }
+/* line 45, _lineup.scss */
+.path-artists img {
+  width: 100%;
+  height: auto; }
+
+/* line 10, style.scss */
 * + * {
   margin-top: 1.618em; }
 
-/* line 11, style.scss */
+/* line 12, style.scss */
 * > div,
 li {
   margin-top: 0; }
 
-/* line 14, style.scss */
+/* line 15, style.scss */
 body {
   font-size: 14.5px;
   color: #03241B; }
 
-/* line 24, style.scss */
+/* line 25, style.scss */
 body:not(.path-frontpage) main {
   margin-right: auto;
   margin-left: auto;
@@ -8139,28 +8197,28 @@ body:not(.path-frontpage) main {
   body:not(.path-frontpage) main:after {
     clear: both; }
   @media (min-width: 768px) {
-    /* line 24, style.scss */
+    /* line 25, style.scss */
     body:not(.path-frontpage) main {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 24, style.scss */
+    /* line 25, style.scss */
     body:not(.path-frontpage) main {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 24, style.scss */
+    /* line 25, style.scss */
     body:not(.path-frontpage) main {
       width: 1170px; } }
 
 @media (max-width: 480px) {
-  /* line 29, style.scss */
+  /* line 30, style.scss */
   h2 {
     font-size: 21px; } }
 
-/* line 33, style.scss */
+/* line 34, style.scss */
 .container-fluid {
   padding: 0; }
 
-/* line 37, style.scss */
+/* line 38, style.scss */
 .has-icon:before {
   line-height: 1.428571429;
   vertical-align: top;
@@ -8176,21 +8234,21 @@ body:not(.path-frontpage) main {
   clear: both; }
 
 /** header **/
-/* line 51, style.scss */
+/* line 52, style.scss */
 nav#block-utilitylinks {
   margin: 0;
   background: #353535;
   text-align: right; }
 
-/* line 57, style.scss */
+/* line 58, style.scss */
 nav#block-utilitylinks ul {
   margin: 0 auto; }
 
-/* line 61, style.scss */
+/* line 62, style.scss */
 nav#block-utilitylinks li {
   display: inline-block;
   margin: 0 2em 0 0; }
-  /* line 65, style.scss */
+  /* line 66, style.scss */
   nav#block-utilitylinks li a {
     color: #f2f3f5;
     font-weight: 300;
@@ -8198,11 +8256,11 @@ nav#block-utilitylinks li {
     padding: 6px 8px;
     font-size: .9em; }
 
-/* line 74, style.scss */
+/* line 75, style.scss */
 h1 {
   text-align: center; }
 
-/* line 78, style.scss */
+/* line 79, style.scss */
 #block-mainnavigation {
   margin-right: auto;
   margin-left: auto;
@@ -8216,18 +8274,18 @@ h1 {
   #block-mainnavigation:after {
     clear: both; }
   @media (min-width: 768px) {
-    /* line 78, style.scss */
+    /* line 79, style.scss */
     #block-mainnavigation {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 78, style.scss */
+    /* line 79, style.scss */
     #block-mainnavigation {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 78, style.scss */
+    /* line 79, style.scss */
     #block-mainnavigation {
       width: 1170px; } }
-  /* line 80, style.scss */
+  /* line 81, style.scss */
   #block-mainnavigation ul {
     position: relative;
     float: left;
@@ -8237,10 +8295,10 @@ h1 {
     padding-right: 0;
     list-style-type: none;
     text-align: center; }
-  /* line 86, style.scss */
+  /* line 87, style.scss */
   #block-mainnavigation li {
     display: inline-block; }
-  /* line 87, style.scss */
+  /* line 88, style.scss */
   #block-mainnavigation a {
     background: black;
     width: 11em;
@@ -8250,15 +8308,15 @@ h1 {
     vertical-align: middle;
     display: table-cell; }
 
-/* line 98, style.scss */
+/* line 99, style.scss */
 body:not(.front) .sociallinks {
   background: transparent; }
-  /* line 100, style.scss */
+  /* line 101, style.scss */
   body:not(.front) .sociallinks a {
     display: inline-block;
     font-size: 1em; }
 
-/* line 106, style.scss */
+/* line 107, style.scss */
 div#block-belleayre-branding {
   text-align: center;
   padding: 0.809em;
@@ -8268,34 +8326,7 @@ div#block-belleayre-branding {
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center; }
-  /* line 115, style.scss */
+  /* line 116, style.scss */
   div#block-belleayre-branding h1 a {
     color: #03241B;
     text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2); }
-
-/*** artists ***/
-/* line 124, style.scss */
-body:not(.path-frontpage) .artist-row {
-  position: relative;
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding-left: 0;
-  padding-right: 0;
-  position: relative;
-  min-height: 1px;
-  padding-left: 0.5em;
-  padding-right: 0.5em; }
-  @media (min-width: 768px) {
-    /* line 124, style.scss */
-    body:not(.path-frontpage) .artist-row {
-      float: left;
-      width: 25%; } }
-  /* line 128, style.scss */
-  body:not(.path-frontpage) .artist-row a {
-    font-weight: 300; }
-
-/* line 134, style.scss */
-img {
-  width: 100%;
-  height: auto; }

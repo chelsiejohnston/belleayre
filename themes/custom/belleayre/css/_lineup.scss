@@ -1,0 +1,49 @@
+/*** artists ***/
+.path-artists {
+	
+	h3 { 
+		text-align: center;
+		clear: both; 
+		font-weight: 400;
+		color: #6a8e51;
+		text-transform: uppercase;
+		padding-left: 0;
+		padding-top: 4em;
+		padding-bottom: 1.618em;
+		&:nth-of-type(1) {
+			padding-top: 1em;
+		}
+	}
+	.artist-row {
+		margin: 0.4em auto;
+		border-top: solid 1px #EAEAEA;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		@include make-xs-column(12, 0);		
+		.views-field-title {
+			@include make-xs-column(6,0);
+			text-align: left;
+		}
+		.views-field-field-image {
+			@include make-xs-column(6, 2em);
+		}
+		// width: 33%;
+		margin: 0 auto;
+		// display: block;
+		a {
+			font-weight: 600;
+			font-size: 30px;
+			color: #0B4625;
+		}
+		p {
+			
+			font-size: 1.3em;
+			font-weight: 300;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
