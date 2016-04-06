@@ -8060,21 +8060,72 @@ div#block-social1 {
 .page-getting-here .google-map h2 {
   font-size: 0; }
 
-/* line 8, style.scss */
+/* line 2, _artist.scss */
+body.page-node-type-artist .artist-container {
+  margin-top: 1.4em;
+  position: relative;
+  float: left;
+  width: 83.3333333333%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0; }
+  @media (min-width: 768px) {
+    /* line 2, _artist.scss */
+    body.page-node-type-artist .artist-container {
+      margin-left: 8.3333333333%; } }
+/* line 8, _artist.scss */
+body.page-node-type-artist .artist-image {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-left: 0; }
+  @media (min-width: 768px) {
+    /* line 8, _artist.scss */
+    body.page-node-type-artist .artist-image {
+      float: left;
+      width: 33.3333333333%; } }
+/* line 14, _artist.scss */
+body.page-node-type-artist .artist-content {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-size: 1.312em;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    /* line 14, _artist.scss */
+    body.page-node-type-artist .artist-content {
+      float: left;
+      width: 66.6666666667%; } }
+
+/* line 9, style.scss */
 * + * {
   margin-top: 1.618em; }
 
-/* line 10, style.scss */
+/* line 11, style.scss */
 * > div,
 li {
   margin-top: 0; }
 
-/* line 13, style.scss */
+/* line 14, style.scss */
 body {
   font-size: 14.5px;
   color: #03241B; }
 
-/* line 23, style.scss */
+/* line 24, style.scss */
 body:not(.path-frontpage) main {
   margin-right: auto;
   margin-left: auto;
@@ -8088,28 +8139,28 @@ body:not(.path-frontpage) main {
   body:not(.path-frontpage) main:after {
     clear: both; }
   @media (min-width: 768px) {
-    /* line 23, style.scss */
+    /* line 24, style.scss */
     body:not(.path-frontpage) main {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 23, style.scss */
+    /* line 24, style.scss */
     body:not(.path-frontpage) main {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 23, style.scss */
+    /* line 24, style.scss */
     body:not(.path-frontpage) main {
       width: 1170px; } }
 
 @media (max-width: 480px) {
-  /* line 28, style.scss */
+  /* line 29, style.scss */
   h2 {
     font-size: 21px; } }
 
-/* line 32, style.scss */
+/* line 33, style.scss */
 .container-fluid {
   padding: 0; }
 
-/* line 36, style.scss */
+/* line 37, style.scss */
 .has-icon:before {
   line-height: 1.428571429;
   vertical-align: top;
@@ -8125,21 +8176,21 @@ body:not(.path-frontpage) main {
   clear: both; }
 
 /** header **/
-/* line 50, style.scss */
+/* line 51, style.scss */
 nav#block-utilitylinks {
   margin: 0;
   background: #353535;
   text-align: right; }
 
-/* line 56, style.scss */
+/* line 57, style.scss */
 nav#block-utilitylinks ul {
   margin: 0 auto; }
 
-/* line 60, style.scss */
+/* line 61, style.scss */
 nav#block-utilitylinks li {
   display: inline-block;
   margin: 0 2em 0 0; }
-  /* line 64, style.scss */
+  /* line 65, style.scss */
   nav#block-utilitylinks li a {
     color: #f2f3f5;
     font-weight: 300;
@@ -8147,11 +8198,11 @@ nav#block-utilitylinks li {
     padding: 6px 8px;
     font-size: .9em; }
 
-/* line 73, style.scss */
+/* line 74, style.scss */
 h1 {
   text-align: center; }
 
-/* line 77, style.scss */
+/* line 78, style.scss */
 #block-mainnavigation {
   margin-right: auto;
   margin-left: auto;
@@ -8165,18 +8216,18 @@ h1 {
   #block-mainnavigation:after {
     clear: both; }
   @media (min-width: 768px) {
-    /* line 77, style.scss */
+    /* line 78, style.scss */
     #block-mainnavigation {
       width: 750px; } }
   @media (min-width: 992px) {
-    /* line 77, style.scss */
+    /* line 78, style.scss */
     #block-mainnavigation {
       width: 970px; } }
   @media (min-width: 1200px) {
-    /* line 77, style.scss */
+    /* line 78, style.scss */
     #block-mainnavigation {
       width: 1170px; } }
-  /* line 79, style.scss */
+  /* line 80, style.scss */
   #block-mainnavigation ul {
     position: relative;
     float: left;
@@ -8186,10 +8237,10 @@ h1 {
     padding-right: 0;
     list-style-type: none;
     text-align: center; }
-  /* line 85, style.scss */
+  /* line 86, style.scss */
   #block-mainnavigation li {
     display: inline-block; }
-  /* line 86, style.scss */
+  /* line 87, style.scss */
   #block-mainnavigation a {
     background: black;
     width: 11em;
@@ -8199,15 +8250,15 @@ h1 {
     vertical-align: middle;
     display: table-cell; }
 
-/* line 97, style.scss */
+/* line 98, style.scss */
 body:not(.front) .sociallinks {
   background: transparent; }
-  /* line 99, style.scss */
+  /* line 100, style.scss */
   body:not(.front) .sociallinks a {
     display: inline-block;
     font-size: 1em; }
 
-/* line 105, style.scss */
+/* line 106, style.scss */
 div#block-belleayre-branding {
   text-align: center;
   padding: 0.809em;
@@ -8217,13 +8268,13 @@ div#block-belleayre-branding {
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center; }
-  /* line 114, style.scss */
+  /* line 115, style.scss */
   div#block-belleayre-branding h1 a {
     color: #03241B;
     text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2); }
 
 /*** artists ***/
-/* line 123, style.scss */
+/* line 124, style.scss */
 body:not(.path-frontpage) .artist-row {
   position: relative;
   float: left;
@@ -8236,12 +8287,15 @@ body:not(.path-frontpage) .artist-row {
   padding-left: 0.5em;
   padding-right: 0.5em; }
   @media (min-width: 768px) {
-    /* line 123, style.scss */
+    /* line 124, style.scss */
     body:not(.path-frontpage) .artist-row {
       float: left;
       width: 25%; } }
+  /* line 128, style.scss */
+  body:not(.path-frontpage) .artist-row a {
+    font-weight: 300; }
 
-/* line 129, style.scss */
+/* line 134, style.scss */
 img {
   width: 100%;
   height: auto; }

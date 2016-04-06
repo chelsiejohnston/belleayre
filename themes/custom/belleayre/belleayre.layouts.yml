@@ -1,0 +1,10 @@
+floated:
+  label: Floated
+  category: My Layouts
+  template: templates/floated
+  css: css/floated.css
+  regions:
+    floated:
+      label: Floated content
+    main:
+      label: Main content
