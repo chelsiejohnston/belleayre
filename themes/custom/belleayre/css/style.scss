@@ -32,6 +32,10 @@ h2 {
     @include breakpoint(0, $screen-xs) { font-size: 21px; }
 }
 
+header.container-fluid {
+    background: rgb(8, 36, 28);
+}
+
 .container-fluid { padding: 0; }
 
 // icons
@@ -51,27 +55,60 @@ h2 {
 /** header **/
 
 nav#block-utilitylinks {
-    margin: 0;
+   // margin: 0;
     background: rgba(8, 36, 28, 0.84);
-    text-align: right;
-    height: 3em;
+    //  text-align: right;
+    //  height: 3em;
 }
 
-nav#block-utilitylinks ul {    
-    margin: 0 auto;
+nav#block-utilitylinks ul {        
+   @include breakpoint(0, $screen-xs) { 
+        list-style-type: none;
+        text-align: left;
+        width: 100%;
+        padding: 0;
+    }
+    @include breakpoint(sm) {
+        width: 460px;
+        margin: 1em auto;
+    }
+}
+
+body:not(.path-frontpage) { 
+nav#block-utilitylinks ul { 
+    margin: 0;
+}
 }
 
 nav#block-utilitylinks li {
     display: inline-block;
-    margin: 0 2em 0 0;
-
-    a {
-        color: rgb(242, 243, 245);
-        font-weight: 300;
-        display: block;
-        padding: 6px 8px;
-        font-size: .9em;
+    @include breakpoint(0, $screen-xs) { 
+    //     margin: 0;
+    //     width: 24%;
+        text-align: center;
     }
+    @include breakpoint(sm) { 
+        padding: 0 11px;
+        text-align: center;
+    
+    }
+
+     a {
+         color: rgb(242, 243, 245);
+         font-weight: 300;
+    //     display: block;        
+    //     font-size: .9em;
+         @include breakpoint(0, $screen-xs) {
+    //         color: #f2f3f5;
+    //         font-weight: 300;            
+             font-size: 1em;
+             padding: 8px;
+    //         vertical-align: middle;
+    //         display: table-cell;
+         }
+    //     @include breakpoint(sm) { padding: 6px 8px; }
+     
+}
 }
 
 h1 {
@@ -88,6 +125,7 @@ h1 {
     }   
     li { display: inline-block; } 
     a {
+        @include breakpoint(0, $screen-xs) { width: 9em; }
      background: #7D9D3E;
      width: 11em;
      text-align: center;

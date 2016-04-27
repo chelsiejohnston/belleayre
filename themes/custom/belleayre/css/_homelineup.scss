@@ -54,13 +54,20 @@ div.lineup-inset {
 }
 
 #block-customlineup {
-	background: #03241B;
+	@include breakpoint(xs) { width: 100%; }
+	@include breakpoint(sm) { 
+		width: 80%; 
+		padding: calc(1.618em * 2);
+		margin: 0 auto calc(1.618em * 2);
+	}	
+
 	h2 {
 		text-align: center;
-		color: #7ECFD9;
-		font-size: 70px;
+		color: #08241C;
+		font-size: 30px;
 		margin: 0 0 1em 0;
-		font-weight: 300;
+		margin: 1em 0;
+		font-weight: 600;
 		text-transform: uppercase;
 		letter-spacing: 11px;
 	}

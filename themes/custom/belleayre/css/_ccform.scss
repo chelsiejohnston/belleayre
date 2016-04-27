@@ -2,7 +2,7 @@
     font: 16px Helvetica Neue,Arial,sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    min-width:350px;
+    // min-width:350px;
     margin:0 auto;
     box-sizing:border-box;
     padding: 15px;
@@ -18,7 +18,7 @@
 .ctct-custom-form .ctct-form-required { position: relative; }
 .ctct-custom-form .ctct-form-required:before {content: "\2217";position: absolute;top: -4px;left: -12px;color: #f5463b; }
 .ctct-custom-form input[type="text"] {
-    width: 100%;
+    // width: 100%;
     padding: 10px 15px;
     border: 1px solid #b0b6bb;
     border-radius: 4px;
@@ -27,6 +27,7 @@
     color: #394856;
     font-size: 16px;
     line-height: 1.5; 
+    width: 300px;
 }
 .ctct-custom-form input[type="text"]:focus { outline: 1px solid #5dacd6; }
 .ctct-custom-form .ctct-form-errorMessage {
@@ -99,8 +100,8 @@
 .ctct-embed-signup h2 { display: none; }
 
 .ctct-custom-form { 
-    display: flex;
-    flex-direction: row;
+    // display: flex;
+    // flex-direction: row;
     background: transparent;
     padding: 0;
     @include breakpoint(0, $screen-xs) {
@@ -114,8 +115,8 @@
 }
 
 .ctct-custom-form p[data-id="Email Address:p"] {
-    display: flex;
-    flex: 2 0 0; 
+    // display: flex;
+    // flex: 2 0 0; 
     font-size: 3vh;
     // max-height: 7vh;
 }
@@ -123,8 +124,10 @@
 .ctct-custom-form label { display: none; }
 
 .ctct-custom-form button.ctct-button { 
-    display: flex;
-    flex: 1 0 0;
+    // display: flex;
+    // flex: 1 0 0;
+    margin: 0 auto;
+    width: 92px;
     // @include breakpoint(xs) { max-height: 7vh; }
     max-height: 2.75em;
     background: #43710B;    
@@ -132,4 +135,8 @@
     &:hover {
         background: #405D38;
     }
+}
+
+.ctct-embed-signup {
+    margin-bottom: 3em;
 }

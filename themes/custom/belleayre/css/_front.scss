@@ -1,8 +1,9 @@
 /** front page **/
 
 #block-teaserintro {
+    padding: calc(1.618em * 2) 0;
     text-align: center;
-    padding: .5 * $global-padding;
+    //padding: .5 * $global-padding;
     background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
     background-size: cover;
     background-position: top center;
@@ -12,20 +13,21 @@
     letter-spacing: .618px;
     // mix-blend-mode: overlay;
     font-weight: bold;
-    font-size: 5vw;
+    //font-size: 5vw;
     // color: #CDE1E1;
     text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
-    // margin-top: 15vh;    
+    //// margin-top: 15vh;    
     display: flex;
     align-items: center;
     justify-content: center;  
+    width: 100%;
 
     .logo-date, .logo-location {
-        font-size: 3.5vh;
+        //font-size: 3.5vh;
     }
 
     .logo-image {
-        width: 20vw;
+        //width: 20vw;
         margin: -1.5em auto 0;
         img {
             width: 100%;
@@ -42,17 +44,17 @@
 }
 
 body.path-frontpage #block-teaserintro {
-    margin-top: -11vh;
+    //margin-top: -11vh;
 }
 
 span.date { 
-    font-size: 3.25vw; 
-    letter-spacing: 1vw;
+    //font-size: 3.25vw; 
+    //letter-spacing: 1vw;
     font-weight: 400;
-    // line-height: 13vw !important;
+    //// line-height: 13vw !important;
     @include breakpoint(md) {
-        font-size: 2.25vw;
-        // line-height: 9vw !important;
+        //font-size: 2.25vw;
+        //// line-height: 9vw !important;
     }
 }
 
@@ -63,50 +65,57 @@ span.date {
 body.path-frontpage {
     nav#block-mainnavigation {
         z-index: 2;
+        @include breakpoint(0, $screen-xs) { 
+            background: #E1EFF2;
+            z-index: 1000;
+            position: relative;
+            margin-top: 0;
+            padding-top: 1em;
+        }
     }
 }
 
 span.location { 
-    font-size: 4.5vw;
-    letter-spacing: 1vw;
+    //font-size: 4.5vw;
+    //letter-spacing: 1vw;
     font-weight: 400;
-    // line-height: 5.75vw !important;
+    //// line-height: 5.75vw !important;
     @include breakpoint(md) {
-        font-size: 3.5vw;
-        letter-spacing: 0.5vw;
+        //font-size: 3.5vw;
+        //letter-spacing: 0.5vw;
     }
     @include breakpoint(lg) {
-        font-size: 2.7vw;
-        letter-spacing: .6vw;
-        // line-height: 0.75vw !important;
+        //font-size: 2.7vw;
+        //letter-spacing: .6vw;
+        //// line-height: 0.75vw !important;
     }
 }
 
 #block-teaserintro span.title { 
-    letter-spacing: -1vw;    
-    line-height: 11.5vw;
+    //letter-spacing: -1vw;    
+    //line-height: 11.5vw;
     // color: #000000;
     // mix-blend-mode: overlay;
     text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
-    // @include breakpoint(sm) { margin-top: -18vh; }
-    font-size: 12vw;
-    margin-top: 15vh;
+    //// @include breakpoint(sm) { margin-top: -18vh; }
+    //font-size: 12vw;
+    //margin-top: 15vh;
     @include breakpoint(md) { 
-        font-size: 10vw;
-        // line-height: 16.5vw;
+        //font-size: 10vw;
+        //// line-height: 16.5vw;
     }
     @include breakpoint(lg) {
-        font-size: 8vw;
-        // line-height: 14.5vw;
+        //font-size: 8vw;
+        //// line-height: 14.5vw;
         letter-spacing: -.1em;
     }
 }
 
 span.lineup-soon {
     font-weight: 400;
-    @include breakpoint(xs) { font-size: 3vw; }
-    @include breakpoint(sm) { font-size: 2vw; }
-    letter-spacing: .5vw;
+    //@include breakpoint(xs) { font-size: 3vw; }
+    //@include breakpoint(sm) { font-size: 2vw; }
+    //letter-spacing: .5vw;
 }
 
 span.name { 
@@ -114,8 +123,8 @@ span.name {
 }
 
 #block-aboutbelleayremusicfestival {
-    height: 10vh;
-    @include breakpoint(sm) { padding: 8vh 15.5vw; }
+    //height: 10vh;
+    ////@include breakpoint(sm) { padding: 8vh 15.5vw; }
 }
 
 div#block-sociallinks {    
@@ -172,7 +181,7 @@ header {
 //     height: 30em;
 //     border-top: solid 5px #001002;
 //     top: 1em;
-//     width: 30vw;
+////     width: 30vw;
 }
 
 // #block-comingsoon span:before {
@@ -207,9 +216,10 @@ div#block-mailinglistsignupform {
     background: $deepgreen;    
     color: $lightblue;   
     text-align: center;
+    width: 100%;
     h2 {
         font-size: 1em;
-        line-height: 5.5vw;
+        //line-height: 5.5vw;
         font-weight: 300;
         @include breakpoint(sm) { 
             font-size: 1.1em;
@@ -224,14 +234,16 @@ div.sociallinks {
     display: flex;
     align-items: center;
     justify-content: center;    
+    width: 100%;
+    padding: 1em;
     a {
         display: block;
-        font-size: 3vh;
+        //font-size: 3vh;
         color: #657D82;
-        margin: 2vh;
+        //margin: 2vh;
         font-weight: 300;
         @include breakpoint(0, $screen-xs) {
-            font-size: 4vh;
+            //font-size: 4vh;
             &:after {
                 content: " · ";
             }
@@ -240,6 +252,7 @@ div.sociallinks {
 }
 
 #block-inthenews {
+    width: 100%;
     font-weight: 400;
     background: #EFEFEF;
     color: #1C2120;
@@ -247,7 +260,7 @@ div.sociallinks {
     border-bottom: solid 1px lighten($deepgreen, 10%);
     font-size: 1.777rem;
     line-height: 1.1em;
-    padding: 8vh 6vw;
+    ////padding: 8vh 6vw;
     font-size: 2.2rem;
     text-align: center;
     @include breakpoint(sm) { 
@@ -257,8 +270,9 @@ div.sociallinks {
     }
     a { color: #69B110; }
     ul { 
-        padding: 1vh 3vh 1vh 5vw;
+        ////padding: 1vh 3vh 1vh 5vw;
         list-style-type: none;
+        padding: 1em;
     }
     h2 { text-transform: uppercase;
         font-weight: 400;
@@ -287,10 +301,12 @@ div.sociallinks {
     }
 
     div#block-thankyou {
-        @include breakpoint(xs) { font-size: 4.5vw; }
-        @include breakpoint(sm) { font-size: 2.5vw; }
+        //@include breakpoint(xs) { font-size: 4.5vw; }
+        //@include breakpoint(sm) { font-size: 2.5vw; }
 
-        padding: 7vw 14vw;
+        //padding: 7vw 14vw;
+        width: 100%;
+        margin: calc(1.618em * 2);
         text-align: center;
         line-height: 1.5em;
         color: #0A5842;        
@@ -312,7 +328,7 @@ div.sociallinks {
         letter-spacing: .25px;
         line-height: 1.8em;
         text-align: center;
-        padding: 3vh 10vh;
+        padding: 1em;
     }
 
     div#block-contactinfo {
@@ -323,7 +339,11 @@ div.sociallinks {
         letter-spacing: .25px;
         font-weight: 300;
         margin: 0;
-        padding: 1vh;
+        //padding: 1vh;
+
+        p {
+            margin: 0;
+        }
     }
 
     div#block-section2anchor { height: 0px; }
@@ -331,19 +351,19 @@ div.sociallinks {
     .scroll-arrow {
     // text-align: center;
     // border: solid 2px;
-    // border-radius: 43vh;
-    // width: 11.25vh;
+    //// border-radius: 43vh;
+    //// width: 11.25vh;
     // margin: 0 auto;
-    // font-size: 7.5vh;
+    //// font-size: 7.5vh;
     // color: #DCDFE0;
     // font-weight: 300;
     a {
         display: block;
         text-align: center;        
-        border-radius: 43vh;
-        width: 13.5vh;
+        //border-radius: 43vh;
+        //width: 13.5vh;
         margin: 0 auto;
-        font-size: 9.5vh;
+        //font-size: 9.5vh;
         background: #03241B;
         color: #155F4B;
         font-weight: 300;
@@ -382,8 +402,8 @@ body:not(.path-frontpage) footer {
 }
 
 .region-front > div {
-    width: 100vw;
-    padding: 7vw;
+    //width: 100vw;
+    //padding: 7vw;
 }
 
 body:not(.path-frontpage) {
@@ -396,23 +416,23 @@ body:not(.path-frontpage) {
 //***************** heights **************/
 
 #block-teaserintro {
-    @include breakpoint(xs) { height: 72vh; }
-    @include breakpoint(sm) { height: 95vh; }
+    //@include breakpoint(xs) { height: 72vh; }
+    //@include breakpoint(sm) { height: 95vh; }
 }
 
 #block-aboutbelleayremusicfestival {
-    @include breakpoint(xs) { height: 24vh; }
-    @include breakpoint(sm) { height: 30vh; }
+    //@include breakpoint(xs) { height: 24vh; }
+    //@include breakpoint(sm) { height: 30vh; }
 }
 
 div#block-mailinglistsignupform {
-    // @include breakpoint(xs) { height: 54vh; }
-    @include breakpoint(sm) { height: 36vh; }
-    // @include breakpoint(md) { height: 36vh; }
+    //// @include breakpoint(xs) { height: 54vh; }
+    //@include breakpoint(sm) { height: 36vh; }
+    //// @include breakpoint(md) { height: 36vh; }
 }
 
 #block-sociallinks {
-    @include breakpoint(xs) { height: 68vh; }    
+    //@include breakpoint(xs) { height: 68vh; }    
 }
 
 //***************** padding & margin overrides **************/
@@ -420,21 +440,26 @@ div#block-mailinglistsignupform {
 
 div#block-aboutbelleayremusicfestival {
     @include breakpoint(xs) { 
-        padding: 1vh 7vw; 
+        ////padding: 1vh 7vw; 
     }
     @include breakpoint(sm) { 
-        margin: 1vh 8.5vw;
-        margin-top: -30vh; 
+        ////margin: 1vh 8.5vw;
+        //margin-top: -30vh; 
     }
     @include breakpoint(md) { 
-        margin: 1vh 15.5vw;
-        margin-top: -30vh;
+        ////margin: 1vh 15.5vw;
+        //margin-top: -30vh;
     }
 }
 
 div#block-mailinglistsignupform {
-    padding: 1vw 7vw;
+    //padding: 1vw 7vw;
     min-height: 17em;
+}
+
+div#block-social1 {
+    width: 100%;
+    margin: calc(1.618em * 2) 0;
 }
 
 //***************** orders **************/
@@ -482,4 +507,10 @@ div#block-thankyou {
 
 div#block-section2anchor  {
     @include breakpoint(xs) { order: 2; }
+}
+
+@include breakpoint(0, $screen-xs) { 
+#block-social1 .col-md-4:nth-child(2) {
+    height: 550px !important;
+}
 }
