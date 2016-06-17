@@ -1,0 +1,93 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Holds hooks and general functionality.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function lightgallery_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.lightgallery':
+      $output = file_get_contents(drupal_get_path('module', 'lightgallery') . '/README.txt');
+      return '<pre>' . $output . '</pre>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function lightgallery_theme() {
+  return array(
+    'lightgallery' => array(
+      'variables' => array('items' => array(), 'id' => NULL),
+      'template' => 'lightgallery',
+    ),
+  );
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function lightgallery_library_info_alter(&$libraries, $module) {
+  if ($module != 'lightgallery') {
+    return;
+  }
+  // We don't currently have a way to process library details from Libraries
+  // API automatically, so extract a core library definition manually.
+  // see: https://www.drupal.org/node/2350877
+  if (isset($libraries['lightgallery'])) {
+    $library = libraries_detect('lightgallery');
+    if (!empty($library['installed']) && !empty($library['files']) && !empty($library['library path'])) {
+      foreach ($library['files'] as $type => $file) {
+        foreach ($file as $filename => $options) {
+          $uri = '/' . $library['library path'] . '/' . $filename;
+          if ($type == 'css') {
+            $libraries['lightgallery']['css']['theme'][$uri] = $options;
+          }
+          else {
+            $libraries['lightgallery'][$type][$uri] = $options;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_libraries_info().
+ */
+function lightgallery_libraries_info() {
+  $libraries['lightgallery'] = array(
+    'name' => 'Lightgallery',
+    'vendor url' => 'http://sachinchoolur.github.io/lightGallery/',
+    'download url' => 'https://github.com/sachinchoolur/lightGallery',
+    'version arguments' => array(
+      'file' => 'dist/js/lightgallery.min.js',
+      // Version 1.2.4
+      'pattern' => '/- v(1.2.*)/',
+      'lines' => 5,
+    ),
+    'files' => array(
+      'js' => array(
+        'dist/js/lightgallery.min.js',
+        'dist/js/lg-autoplay.min.js',
+        'dist/js/lg-fullscreen.min.js',
+        'dist/js/lg-thumbnail.min.js',
+        'dist/js/lg-video.min.js',
+        'dist/js/lg-zoom.min.js',
+        'dist/js/lg-hash.min.js',
+      ),
+      'css' => array(
+        'dist/css/lightgallery.min.css',
+        'dist/css/lg-transitions.min.css',
+      ),
+    ),
+  );
+
+  return $libraries;
+}
+
