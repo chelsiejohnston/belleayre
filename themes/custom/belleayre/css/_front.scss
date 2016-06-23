@@ -3,34 +3,26 @@
 #block-teaserintro {
     padding: calc(1.618em * 2) 0;
     text-align: center;
-    //padding: .5 * $global-padding;
     background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
-    // color: rgb(0, 0, 0);    
-    text-transform: uppercase;  
+    // text-transform: uppercase;  
     letter-spacing: .618px;
-    // mix-blend-mode: overlay;
-    font-weight: bold;
-    //font-size: 5vw;
-    // color: #CDE1E1;
-    text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
-    //// margin-top: 15vh;    
+    font-weight: 300;
+    letter-spacing: 1.618px;
     display: flex;
     align-items: center;
     justify-content: center;  
     width: 100%;
-
-    .logo-date, .logo-location {
-        //font-size: 3.5vh;
-    }
+    font-size: 1.6em;
+    color: #dfeff1;
+    text-shadow: 1px 1px 0 rgba(29, 51, 21, 0.22);
 
     .logo-image {
-        //width: 20vw;
         margin: -1.5em auto 0;
         img {
-            width: 100%;
+            width: 90%;
             height: auto;
         }
     }
@@ -510,7 +502,7 @@ div#block-section2anchor  {
 }
 
 @include breakpoint(0, $screen-xs) { 
-#block-social1 .col-md-4:nth-child(2) {
-    height: 550px !important;
-}
+    #block-social1 .col-md-4:nth-child(2) {
+        height: 550px !important;
+    }
 }

@@ -56,28 +56,28 @@ header.container-fluid {
 
 nav#block-utilitylinks {
    // margin: 0;
-    background: rgba(8, 36, 28, 0.84);
+   background: rgba(8, 36, 28, 0.84);
     //  text-align: right;
     //  height: 3em;
 }
 
 nav#block-utilitylinks ul {        
-   @include breakpoint(0, $screen-xs) { 
-        list-style-type: none;
-        text-align: left;
-        width: 100%;
-        padding: 0;
-    }
-    @include breakpoint(sm) {
-        width: 460px;
-        margin: 1em auto;
-    }
+ @include breakpoint(0, $screen-xs) { 
+    list-style-type: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+}
+@include breakpoint(sm) {
+    width: 460px;
+    margin: 1em auto;
+}
 }
 
 body:not(.path-frontpage) { 
-nav#block-utilitylinks ul { 
-    margin: 0;
-}
+    nav#block-utilitylinks ul { 
+        margin: 0;
+    }
 }
 
 nav#block-utilitylinks li {
@@ -85,29 +85,29 @@ nav#block-utilitylinks li {
     @include breakpoint(0, $screen-xs) { 
     //     margin: 0;
     //     width: 24%;
-        text-align: center;
-    }
-    @include breakpoint(sm) { 
-        padding: 0 11px;
-        text-align: center;
+    text-align: center;
+}
+@include breakpoint(sm) { 
+    padding: 0 11px;
+    text-align: center;
     
-    }
+}
 
-     a {
-         color: rgb(242, 243, 245);
-         font-weight: 300;
+a {
+   color: rgb(242, 243, 245);
+   font-weight: 300;
     //     display: block;        
     //     font-size: .9em;
-         @include breakpoint(0, $screen-xs) {
+    @include breakpoint(0, $screen-xs) {
     //         color: #f2f3f5;
     //         font-weight: 300;            
-             font-size: 1em;
-             padding: 8px;
+    font-size: 1em;
+    padding: 8px;
     //         vertical-align: middle;
     //         display: table-cell;
-         }
+}
     //     @include breakpoint(sm) { padding: 6px 8px; }
-     
+    
 }
 }
 
@@ -126,22 +126,22 @@ h1 {
     li { display: inline-block; } 
     a {
         @include breakpoint(0, $screen-xs) { width: 9em; }
-     background: #7D9D3E;
-     width: 11em;
-     text-align: center;
-     color: white;
-     height: 3em;
-     vertical-align: middle;
-     display: table-cell;
-     font-weight: 300;
-     font-size: 1.1em;
-     letter-spacing: .5px;
-     border-top: solid 3px rgba(46, 70, 63, 0.38);
-     &:hover {
-        background: #66832D;
-        text-decoration: none;
+        background: #7D9D3E;
+        width: 11em;
+        text-align: center;
+        color: white;
+        height: 3em;
+        vertical-align: middle;
+        display: table-cell;
+        font-weight: 300;
+        font-size: 1.1em;
+        letter-spacing: .5px;
+        border-top: solid 3px rgba(46, 70, 63, 0.38);
+        &:hover {
+            background: #66832D;
+            text-decoration: none;
+        }
     }
-}
 }
 
 body:not(.front) .sociallinks {
@@ -155,9 +155,11 @@ body:not(.front) .sociallinks {
 div#block-belleayre-branding {    
     text-align: center;
     padding: .5 * $global-padding;    
-    text-transform: uppercase;   
-    letter-spacing: .618px;    
-    font-weight: bold;
+    letter-spacing: 1.618px;    
+    font-weight: 300;
+    font-size: 1.6em;
+    color: #dfeff1;
+    text-shadow: 1px 1px 0 rgba(29, 51, 21, 0.22);
     background: url('/themes/custom/belleayre/images/belleayre_cutout.jpg'), rgba(0,0,0,.1);
     background-size: cover;
     background-position: center 34%;

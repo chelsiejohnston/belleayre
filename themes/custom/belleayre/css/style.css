@@ -7600,49 +7600,51 @@ div.tabs {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
-  text-transform: uppercase;
   letter-spacing: .618px;
-  font-weight: bold;
-  text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+  letter-spacing: 1.618px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; }
-  /* line 29, _front.scss */
+  width: 100%;
+  font-size: 1.6em;
+  color: #dfeff1;
+  text-shadow: 1px 1px 0 rgba(29, 51, 21, 0.22); }
+  /* line 22, _front.scss */
   #block-teaserintro .logo-image {
     margin: -1.5em auto 0; }
-    /* line 32, _front.scss */
+    /* line 24, _front.scss */
     #block-teaserintro .logo-image img {
-      width: 100%;
+      width: 90%;
       height: auto; }
 
-/* line 39, _front.scss */
+/* line 31, _front.scss */
 #block-teaserintro span {
   display: block;
   margin: 0; }
   @media (min-width: 320px) {
-    /* line 39, _front.scss */
+    /* line 31, _front.scss */
     #block-teaserintro span {
       line-height: 3rem; } }
   @media (min-width: 768px) {
-    /* line 39, _front.scss */
+    /* line 31, _front.scss */
     #block-teaserintro span {
       line-height: 6rem; } }
 
-/* line 50, _front.scss */
+/* line 42, _front.scss */
 span.date {
   font-weight: 400; }
 
 @media (max-width: 480px) {
-  /* line 61, _front.scss */
+  /* line 53, _front.scss */
   #block-teaserintro span.location {
     line-height: 1.75rem; } }
 
-/* line 66, _front.scss */
+/* line 58, _front.scss */
 body.path-frontpage nav#block-mainnavigation {
   z-index: 2; }
   @media (max-width: 480px) {
-    /* line 66, _front.scss */
+    /* line 58, _front.scss */
     body.path-frontpage nav#block-mainnavigation {
       background: #E1EFF2;
       z-index: 1000;
@@ -7650,61 +7652,61 @@ body.path-frontpage nav#block-mainnavigation {
       margin-top: 0;
       padding-top: 1em; } }
 
-/* line 78, _front.scss */
+/* line 70, _front.scss */
 span.location {
   font-weight: 400; }
 
-/* line 94, _front.scss */
+/* line 86, _front.scss */
 #block-teaserintro span.title {
   text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2); }
   @media (min-width: 1200px) {
-    /* line 94, _front.scss */
+    /* line 86, _front.scss */
     #block-teaserintro span.title {
       letter-spacing: -.1em; } }
 
-/* line 114, _front.scss */
+/* line 106, _front.scss */
 span.lineup-soon {
   font-weight: 400; }
 
-/* line 138, _front.scss */
+/* line 130, _front.scss */
 div#block-sociallinks * {
   margin: 0; }
 
-/* line 142, _front.scss */
+/* line 134, _front.scss */
 .social a {
   margin-right: 1em;
   color: #7ECFD9; }
   @media (min-width: 320px) {
-    /* line 142, _front.scss */
+    /* line 134, _front.scss */
     .social a {
       display: block; } }
   @media (min-width: 768px) {
-    /* line 142, _front.scss */
+    /* line 134, _front.scss */
     .social a {
       display: inline; } }
 
-/* line 207, _front.scss */
+/* line 199, _front.scss */
 #block-aboutbelleayremusicfestival {
   background: rgba(175, 196, 175, 0.9); }
 
-/* line 213, _front.scss */
+/* line 205, _front.scss */
 div#block-mailinglistsignupform {
   font-weight: 300;
   background: #03241B;
   color: #DBE4E2;
   text-align: center;
   width: 100%; }
-  /* line 220, _front.scss */
+  /* line 212, _front.scss */
   div#block-mailinglistsignupform h2 {
     font-size: 1em;
     font-weight: 300; }
     @media (min-width: 768px) {
-      /* line 220, _front.scss */
+      /* line 212, _front.scss */
       div#block-mailinglistsignupform h2 {
         font-size: 1.1em;
         margin-bottom: 0; } }
 
-/* line 231, _front.scss */
+/* line 223, _front.scss */
 #block-sociallinks,
 div.sociallinks {
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
@@ -7713,19 +7715,19 @@ div.sociallinks {
   justify-content: center;
   width: 100%;
   padding: 1em; }
-  /* line 239, _front.scss */
+  /* line 231, _front.scss */
   #block-sociallinks a,
   div.sociallinks a {
     display: block;
     color: #657D82;
     font-weight: 300; }
     @media (max-width: 480px) {
-      /* line 247, _front.scss */
+      /* line 239, _front.scss */
       #block-sociallinks a:after,
       div.sociallinks a:after {
         content: " · "; } }
 
-/* line 254, _front.scss */
+/* line 246, _front.scss */
 #block-inthenews {
   width: 100%;
   font-weight: 400;
@@ -7738,18 +7740,18 @@ div.sociallinks {
   font-size: 2.2rem;
   text-align: center; }
   @media (min-width: 768px) {
-    /* line 254, _front.scss */
+    /* line 246, _front.scss */
     #block-inthenews {
       display: flex;
       flex-direction: column; } }
-  /* line 271, _front.scss */
+  /* line 263, _front.scss */
   #block-inthenews a {
     color: #69B110; }
-  /* line 272, _front.scss */
+  /* line 264, _front.scss */
   #block-inthenews ul {
     list-style-type: none;
     padding: 1em; }
-  /* line 277, _front.scss */
+  /* line 269, _front.scss */
   #block-inthenews h2 {
     text-transform: uppercase;
     font-weight: 400;
@@ -7757,21 +7759,21 @@ div.sociallinks {
     text-align: center;
     font-family: Helvetica Neue; }
 
-/* line 284, _front.scss */
+/* line 276, _front.scss */
 #block-embeddedsoundcloudplaylist {
   font-weight: 400;
   background: #EFEFEF;
   font-family: Georgia;
   color: #1C2120; }
   @media (min-width: 768px) {
-    /* line 284, _front.scss */
+    /* line 276, _front.scss */
     #block-embeddedsoundcloudplaylist {
       display: flex;
       flex-direction: column; } }
-  /* line 295, _front.scss */
+  /* line 287, _front.scss */
   #block-embeddedsoundcloudplaylist a {
     color: #e3fac6; }
-  /* line 296, _front.scss */
+  /* line 288, _front.scss */
   #block-embeddedsoundcloudplaylist h2 {
     text-transform: uppercase;
     font-weight: 400;
@@ -7779,7 +7781,7 @@ div.sociallinks {
     text-align: center;
     font-family: Helvetica Neue; }
 
-/* line 303, _front.scss */
+/* line 295, _front.scss */
 div#block-thankyou {
   width: 100%;
   margin: calc(1.618em * 2);
@@ -7788,14 +7790,14 @@ div#block-thankyou {
   color: #0A5842;
   font-style: normal;
   font-weight: 300; }
-  /* line 315, _front.scss */
+  /* line 307, _front.scss */
   div#block-thankyou h2 {
     font-size: 2em;
     font-style: normal;
     color: #A2ADA4;
     font-family: Georgia; }
 
-/* line 323, _front.scss */
+/* line 315, _front.scss */
 div#block-endingblurb {
   background: black;
   color: rgba(255, 255, 255, 0.8);
@@ -7806,7 +7808,7 @@ div#block-endingblurb {
   text-align: center;
   padding: 1em; }
 
-/* line 334, _front.scss */
+/* line 326, _front.scss */
 div#block-contactinfo {
   background: black;
   text-align: center;
@@ -7815,15 +7817,15 @@ div#block-contactinfo {
   letter-spacing: .25px;
   font-weight: 300;
   margin: 0; }
-  /* line 344, _front.scss */
+  /* line 336, _front.scss */
   div#block-contactinfo p {
     margin: 0; }
 
-/* line 349, _front.scss */
+/* line 341, _front.scss */
 div#block-section2anchor {
   height: 0px; }
 
-/* line 360, _front.scss */
+/* line 352, _front.scss */
 .scroll-arrow a {
   display: block;
   text-align: center;
@@ -7833,7 +7835,7 @@ div#block-section2anchor {
   font-weight: 300;
   border: 0;
   text-shadow: 0 1px 0 #04231a; }
-  /* line 372, _front.scss */
+  /* line 364, _front.scss */
   .scroll-arrow a:hover, .scroll-arrow a:focus, .scroll-arrow a:active {
     text-decoration: none;
     font-weight: 300;
@@ -7841,102 +7843,102 @@ div#block-section2anchor {
     background: #03241b;
     border-color: #03241b; }
 
-/* line 384, _front.scss */
+/* line 376, _front.scss */
 footer {
   margin: 0;
   border-top: solid 1px; }
-  /* line 387, _front.scss */
+  /* line 379, _front.scss */
   footer a {
     color: white; }
 
-/* line 392, _front.scss */
+/* line 384, _front.scss */
 body:not(.path-frontpage) footer {
   margin-top: 4em; }
 
-/* line 398, _front.scss */
+/* line 390, _front.scss */
 .region-front {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
-/* line 410, _front.scss */
+/* line 402, _front.scss */
 body:not(.path-frontpage) span.date {
   font-size: 1.5em;
   letter-spacing: 10px; }
 
-/* line 455, _front.scss */
+/* line 447, _front.scss */
 div#block-mailinglistsignupform {
   min-height: 17em; }
 
-/* line 460, _front.scss */
+/* line 452, _front.scss */
 div#block-social1 {
   width: 100%;
   margin: calc(1.618em * 2) 0; }
 
 @media (min-width: 320px) {
-  /* line 466, _front.scss */
+  /* line 458, _front.scss */
   .region-front > div {
     order: 10; } }
 
 @media (min-width: 320px) {
-  /* line 470, _front.scss */
+  /* line 462, _front.scss */
   #block-sociallinks {
     order: 9; } }
 
 @media (min-width: 320px) {
-  /* line 474, _front.scss */
+  /* line 466, _front.scss */
   #block-teaserintro {
     order: 0; } }
 
 @media (min-width: 320px) {
-  /* line 478, _front.scss */
+  /* line 470, _front.scss */
   #block-views-block-artists-block-1,
   #block-customlineup {
     order: 1; } }
 
-/* line 483, _front.scss */
+/* line 475, _front.scss */
 #block-aboutbelleayremusicfestival {
   display: none; }
   @media (min-width: 320px) {
-    /* line 483, _front.scss */
+    /* line 475, _front.scss */
     #block-aboutbelleayremusicfestival {
       order: 1; } }
 
 @media (min-width: 320px) {
-  /* line 488, _front.scss */
+  /* line 480, _front.scss */
   div#block-mailinglistsignupform {
     order: 2; } }
 
 @media (min-width: 320px) {
-  /* line 492, _front.scss */
+  /* line 484, _front.scss */
   #block-inthenews {
     order: 3; } }
 
-/* line 496, _front.scss */
+/* line 488, _front.scss */
 div#block-social1 {
   /** embedded social content feeds **/ }
   @media (min-width: 320px) {
-    /* line 496, _front.scss */
+    /* line 488, _front.scss */
     div#block-social1 {
       order: 4; } }
 
 @media (min-width: 320px) {
-  /* line 500, _front.scss */
+  /* line 492, _front.scss */
   #block-embeddedsoundcloudplaylist {
     order: 5; } }
 
 @media (min-width: 320px) {
-  /* line 504, _front.scss */
+  /* line 496, _front.scss */
   div#block-thankyou {
     order: 8; } }
 
 @media (min-width: 320px) {
-  /* line 508, _front.scss */
+  /* line 500, _front.scss */
   div#block-section2anchor {
     order: 2; } }
 
 @media (max-width: 480px) {
-  /* line 513, _front.scss */
+  /* line 505, _front.scss */
   #block-social1 .col-md-4:nth-child(2) {
     height: 550px !important; } }
 /* line 3, _getting-here.scss */
@@ -8424,13 +8426,15 @@ body:not(.front) .sociallinks {
 div#block-belleayre-branding {
   text-align: center;
   padding: 0.809em;
-  text-transform: uppercase;
-  letter-spacing: .618px;
-  font-weight: bold;
+  letter-spacing: 1.618px;
+  font-weight: 300;
+  font-size: 1.6em;
+  color: #dfeff1;
+  text-shadow: 1px 1px 0 rgba(29, 51, 21, 0.22);
   background: url("/themes/custom/belleayre/images/belleayre_cutout.jpg"), rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center 34%; }
-  /* line 164, style.scss */
+  /* line 166, style.scss */
   div#block-belleayre-branding h1 a {
     color: #03241B;
     text-shadow: 0 1px 35px rgba(255, 255, 255, 0.2);
@@ -8438,7 +8442,7 @@ div#block-belleayre-branding {
     display: block;
     margin: 0 auto; }
 
-/* line 173, style.scss */
+/* line 175, style.scss */
 .field--name-field-artist-ticket-link a {
   background: #F18F2C;
   padding: .75em 3em;
@@ -8455,19 +8459,19 @@ div#block-belleayre-branding {
   border-bottom: solid 2px #CE6D28;
   border-right: solid 2px #C16523;
   color: #FFFFFF; }
-  /* line 189, style.scss */
+  /* line 191, style.scss */
   .field--name-field-artist-ticket-link a:hover {
     background: #CE6D28;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.86); }
 
-/* line 196, style.scss */
+/* line 198, style.scss */
 .field--name-field-artist-performance-date {
   font-size: 1.2em;
   font-weight: 500;
   margin: 1em 0; }
 
-/* line 204, style.scss */
+/* line 206, style.scss */
 .lightgallery li {
   width: 150px;
   float: left;
