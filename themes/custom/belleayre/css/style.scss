@@ -62,7 +62,7 @@ nav#block-utilitylinks {
 }
 
 nav#block-utilitylinks ul {        
- @include breakpoint(0, $screen-xs) { 
+   @include breakpoint(0, $screen-xs) { 
     list-style-type: none;
     text-align: left;
     width: 100%;
@@ -94,8 +94,8 @@ nav#block-utilitylinks li {
 }
 
 a {
-   color: rgb(242, 243, 245);
-   font-weight: 300;
+ color: rgb(242, 243, 245);
+ font-weight: 300;
     //     display: block;        
     //     font-size: .9em;
     @include breakpoint(0, $screen-xs) {
@@ -203,8 +203,30 @@ div#block-belleayre-branding {
 
 // gallery
 
+.lightgallery-wrapper {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
 .lightgallery li {
     width: 150px;
     float: left;
     margin-right: 1em;
+}
+
+.lightgallery .field-content a {
+    display: block;
+    overflow: hidden;
+    height: 100px;
+    margin: 0.5em 0;
+}
+
+.pager { 
+    clear: both;
 }

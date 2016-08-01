@@ -8471,8 +8471,27 @@ div#block-belleayre-branding {
   font-weight: 500;
   margin: 1em 0; }
 
-/* line 206, style.scss */
+/* line 207, style.scss */
+.lightgallery-wrapper:before, .lightgallery-wrapper:after {
+  content: " ";
+  display: table; }
+/* line 212, style.scss */
+.lightgallery-wrapper:after {
+  clear: both; }
+
+/* line 217, style.scss */
 .lightgallery li {
   width: 150px;
   float: left;
   margin-right: 1em; }
+
+/* line 223, style.scss */
+.lightgallery .field-content a {
+  display: block;
+  overflow: hidden;
+  height: 100px;
+  margin: 0.5em 0; }
+
+/* line 230, style.scss */
+.pager {
+  clear: both; }
