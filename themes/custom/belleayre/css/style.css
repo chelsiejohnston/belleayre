@@ -8471,27 +8471,64 @@ div#block-belleayre-branding {
   font-weight: 500;
   margin: 1em 0; }
 
-/* line 207, style.scss */
-.lightgallery-wrapper:before, .lightgallery-wrapper:after {
-  content: " ";
-  display: table; }
-/* line 212, style.scss */
-.lightgallery-wrapper:after {
-  clear: both; }
+/* line 206, style.scss */
+.lightgallery-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-left: 1;
+  padding-right: 1;
+  margin-bottom: 2em; }
+  @media (min-width: 768px) {
+    /* line 206, style.scss */
+    .lightgallery-wrapper {
+      float: left;
+      width: 83.3333333333%; } }
+  /* line 14, bootstrap/mixins/_clearfix.scss */
+  .lightgallery-wrapper:before, .lightgallery-wrapper:after {
+    content: " ";
+    display: table; }
+  /* line 19, bootstrap/mixins/_clearfix.scss */
+  .lightgallery-wrapper:after {
+    clear: both; }
 
-/* line 217, style.scss */
+/* line 212, style.scss */
 .lightgallery li {
   width: 150px;
   float: left;
   margin-right: 1em; }
 
-/* line 223, style.scss */
+/* line 218, style.scss */
 .lightgallery .field-content a {
   display: block;
   overflow: hidden;
   height: 100px;
   margin: 0.5em 0; }
 
-/* line 230, style.scss */
+/* line 225, style.scss */
 .pager {
   clear: both; }
+
+/* line 229, style.scss */
+form#views-exposed-form-gallery-page-1 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0.6em 0;
+  font-size: .9em;
+  color: #403939;
+  width: 90%;
+  border-width: 1px 0;
+  padding: .75em;
+  background: #ececec;
+  border-radius: 5px; }
+  @media (min-width: 768px) {
+    /* line 229, style.scss */
+    form#views-exposed-form-gallery-page-1 {
+      float: left;
+      width: 16.6666666667%; } }
+
+/* line 241, style.scss */
+input#edit-field-show-target-id {
+  width: 100%;
+  margin: 0 .5em .5em 0; }

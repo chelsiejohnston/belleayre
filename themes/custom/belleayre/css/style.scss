@@ -204,14 +204,9 @@ div#block-belleayre-branding {
 // gallery
 
 .lightgallery-wrapper {
-    &:before, &:after {
-        content: " ";
-        display: table;
-    }
-
-    &:after {
-        clear: both;
-    }
+    @include make-sm-column(10, 2);
+    @include clearfix();
+    margin-bottom: 2em;
 }
 
 .lightgallery li {
@@ -229,4 +224,21 @@ div#block-belleayre-branding {
 
 .pager { 
     clear: both;
+}
+
+form#views-exposed-form-gallery-page-1 {
+    @include make-sm-column(2, 0);
+    margin: 0.6em 0;
+    font-size: .9em;
+    color: #403939;
+    width: 90%;
+    border-width: 1px 0;
+    padding: .75em;
+    background: #ececec;
+    border-radius: 5px;
+}
+
+input#edit-field-show-target-id {
+    width: 100%;
+    margin: 0 .5em .5em 0;
 }
